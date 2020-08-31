@@ -1,0 +1,69 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "绑定手环",
+    "children" : [ {
+      "name" : "传入正常的参数，绑定手环成功",
+      "children" : [ {
+        "name" : "test_bind_device001",
+        "uid" : "40e74c7b4d772e2f",
+        "parentUid" : "407e313b597bb9ba76f5d4f2ac0b4f68",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598425635228,
+          "stop" : 1598425636090,
+          "duration" : 862
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_bind_device001",
+        "uid" : "37d219a217a2f139",
+        "parentUid" : "407e313b597bb9ba76f5d4f2ac0b4f68",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598517346373,
+          "stop" : 1598517347506,
+          "duration" : 1133
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "407e313b597bb9ba76f5d4f2ac0b4f68"
+    } ],
+    "uid" : "e16a014a8729b3c4fe6e77e522299e5b"
+  }, {
+    "name" : "解除绑定手环",
+    "children" : [ {
+      "name" : "传入正常的参数，解除绑定手环成功",
+      "children" : [ {
+        "name" : "test_unbind_device001",
+        "uid" : "a629ad93c473fc1e",
+        "parentUid" : "836d668ace37599a7134524b51abf88f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598425636105,
+          "stop" : 1598425640428,
+          "duration" : 4323
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_unbind_device001",
+        "uid" : "2cda431e538bf2ae",
+        "parentUid" : "836d668ace37599a7134524b51abf88f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598517347520,
+          "stop" : 1598517351749,
+          "duration" : 4229
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "836d668ace37599a7134524b51abf88f"
+    } ],
+    "uid" : "cfcc77931a8658a11b5d958f69005cf7"
+  } ]
+}

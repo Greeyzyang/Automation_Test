@@ -1,0 +1,93 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "TestCase",
+    "children" : [ {
+      "name" : "Test_Bind_Device",
+      "children" : [ {
+        "name" : "TestClass",
+        "children" : [ {
+          "name" : "test_bind_device001",
+          "uid" : "40e74c7b4d772e2f",
+          "parentUid" : "e5a6d84855c9580cb2f9b88666b6ffe0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598425635228,
+            "stop" : 1598425636090,
+            "duration" : 862
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e5a6d84855c9580cb2f9b88666b6ffe0"
+      } ],
+      "uid" : "645fcb962887fd507775d64b79d4c4c0"
+    }, {
+      "name" : "Test_Unbind_Device",
+      "children" : [ {
+        "name" : "TestClass",
+        "children" : [ {
+          "name" : "test_unbind_device001",
+          "uid" : "a629ad93c473fc1e",
+          "parentUid" : "e3ceb356f2430e35248914e9bc06b685",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598425636105,
+            "stop" : 1598425640428,
+            "duration" : 4323
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e3ceb356f2430e35248914e9bc06b685"
+      } ],
+      "uid" : "d0a11e1c0c48e0d796e7e1d1ea1e8161"
+    } ],
+    "uid" : "ee79ae265a842e48c4df30f006daaf4e"
+  }, {
+    "name" : "Testcase",
+    "children" : [ {
+      "name" : "Test_Bind_Device",
+      "children" : [ {
+        "name" : "TestClass",
+        "children" : [ {
+          "name" : "test_bind_device001",
+          "uid" : "37d219a217a2f139",
+          "parentUid" : "1028093a1848ab55afb42b9fe8c2d025",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598517346373,
+            "stop" : 1598517347506,
+            "duration" : 1133
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "1028093a1848ab55afb42b9fe8c2d025"
+      } ],
+      "uid" : "3f8bdf26eebfe72f3e7863661b466526"
+    }, {
+      "name" : "Test_Unbind_Device",
+      "children" : [ {
+        "name" : "TestClass",
+        "children" : [ {
+          "name" : "test_unbind_device001",
+          "uid" : "2cda431e538bf2ae",
+          "parentUid" : "97eac596abd51ab54e6cb8ecff6f822f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598517347520,
+            "stop" : 1598517351749,
+            "duration" : 4229
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "97eac596abd51ab54e6cb8ecff6f822f"
+      } ],
+      "uid" : "1eb8ae91f31c93796a09621744297476"
+    } ],
+    "uid" : "1bb8f4d43a47eae7dbcd78afc31ab232"
+  } ]
+}

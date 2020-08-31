@@ -1,0 +1,78 @@
+{
+  "uid" : "41bd390a2bafaa32",
+  "name" : "test_bind_device001",
+  "fullName" : "TestCase.Test_Bind_Device.TestClass#test_bind_device001",
+  "historyId" : "48cb35277732dcb567d087d393363993",
+  "time" : {
+    "start" : 1598357947885,
+    "stop" : 1598357948980,
+    "duration" : 1095
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c01cdf840f0c8bae",
+      "name" : "log",
+      "source" : "c01cdf840f0c8bae.txt",
+      "type" : "text/plain",
+      "size" : 1454
+    }, {
+      "uid" : "a356cbca1939c4a0",
+      "name" : "stdout",
+      "source" : "a356cbca1939c4a0.txt",
+      "type" : "text/plain",
+      "size" : 162
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "绑定手环"
+  }, {
+    "name" : "suite",
+    "value" : "Test_Bind_Device"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-5J7K0KVJ"
+  }, {
+    "name" : "thread",
+    "value" : "16776-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython2"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.Test_Bind_Device"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "41bd390a2bafaa32.json",
+  "parameterValues" : [ ]
+}

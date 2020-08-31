@@ -1,0 +1,77 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "TestCase",
+    "children" : [ {
+      "name" : "Test_Bind_Device",
+      "children" : [ {
+        "name" : "test_bind_device001",
+        "uid" : "40e74c7b4d772e2f",
+        "parentUid" : "7e7a52a7b5cd440d102079ba103903ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598425635228,
+          "stop" : 1598425636090,
+          "duration" : 862
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7e7a52a7b5cd440d102079ba103903ca"
+    }, {
+      "name" : "Test_Unbind_Device",
+      "children" : [ {
+        "name" : "test_unbind_device001",
+        "uid" : "a629ad93c473fc1e",
+        "parentUid" : "ab359f812376f95d6e6a84c78d908b25",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598425636105,
+          "stop" : 1598425640428,
+          "duration" : 4323
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ab359f812376f95d6e6a84c78d908b25"
+    } ],
+    "uid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34"
+  }, {
+    "name" : "Testcase",
+    "children" : [ {
+      "name" : "Test_Bind_Device",
+      "children" : [ {
+        "name" : "test_bind_device001",
+        "uid" : "37d219a217a2f139",
+        "parentUid" : "c1e49f1a7b3307d9b312ec8df4a1bddc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598517346373,
+          "stop" : 1598517347506,
+          "duration" : 1133
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c1e49f1a7b3307d9b312ec8df4a1bddc"
+    }, {
+      "name" : "Test_Unbind_Device",
+      "children" : [ {
+        "name" : "test_unbind_device001",
+        "uid" : "2cda431e538bf2ae",
+        "parentUid" : "c9256c168e0a281d150554a3ed28e61a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598517347520,
+          "stop" : 1598517351749,
+          "duration" : 4229
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c9256c168e0a281d150554a3ed28e61a"
+    } ],
+    "uid" : "1768d235bc1b7e9f03a50b9faf07df13"
+  } ]
+}

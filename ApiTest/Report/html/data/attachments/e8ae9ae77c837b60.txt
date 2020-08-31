@@ -1,0 +1,7 @@
+Test Start***********************
+200
+{"ts":1598425645790,"code":"1","msg":"","data":{"user_center_id":"1789d9dcfa9f62f6b41e689881ce3f58","access_token":"lvtx.NGYEsViun13HpCvnchGO0fJ0gF1AHzMDbw+szszu6D86qj32ujtaWldEVALUOhz7DeHvExiBTZzsWcqQB8TfIA30XxvUeKEO5W25r2MThmhM03frmdRkGNVXJLBlnyKCWdGv7VHlfsLOTpEqIVqwB36g68M6YRuAcCpAdsMAbS02sPuPAgZ2rq020Cn4SGGgtz8fjw==","refresh_token":"lvtx.g+ne6UAkzlmaITsewtS1Eft3WDicJZo/s7EoKEGZ1T8jr8QdhVT03B1mb8dJ0kukboZXbDAYpwGVfdX17Kh0+7wkdpG8cY60t060+HE9zyoGcY3Ny2ATa7OJ7ELYTxruXSFjADUWFgVkBtg/Eh+voABaimmmzU8kwbC+nVW1hyBU8Y3gkfZ6fQke90oU6Vyv7tsL+w=="}}
+200
+{"code": 1, "message": "OK", "data": {"rst": "6tFspJI0x3gfG3ed"}, "current": 0, "total": 0}
+{u'code': 1, 'status_code': 200, u'current': 0, u'message': u'OK', u'total': 0, u'data': {u'rst': u'OK'}, 'time_total': 0.859279}
+Test End***********************

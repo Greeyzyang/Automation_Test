@@ -1,0 +1,10 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:943 Starting new HTTPS connection (1): test-api.wyzecam.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:442 https://test-api.wyzecam.com:443 "POST /app/user/login HTTP/1.1" 200 548
+DEBUG    root:Log.py:69 [DEBUG 2020-08-25 20:24:10]platfolm_cookies: lvtx.zgbMHYaanCakfCd1VdgZmuGZC0ijW9/yuqijNd6Yy/UBOEeO2aYxRaTLS1q54pZi9YNzAffLFJkPq26UGJevaDWtStxt7JbOm7vgbCvYuLV6RBUSLQJqY0TWaY+yAA0JXVH9unCY6dF4hp7i1VOJLykE/esXVsrF7CV+PO3E11Jz/bL0fcLjNhFk0WuMaj05Atl9sA==
+DEBUG    urllib3.connectionpool:connectionpool.py:943 Starting new HTTPS connection (1): test-wristband-service.wyzecam.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:442 https://test-wristband-service.wyzecam.com:443 "POST /app/v2/wristband/generate_token HTTP/1.1" 200 91
+DEBUG    root:Log.py:69 [DEBUG 2020-08-25 20:24:11]wristband_cookies: XM9P412v5GgDzgo/
+DEBUG    root:Log.py:69 [DEBUG 2020-08-25 20:24:11]初始化测试数据
+DEBUG    urllib3.connectionpool:connectionpool.py:943 Starting new HTTPS connection (1): test-wristband-service.wyzecam.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:442 https://test-wristband-service.wyzecam.com:443 "POST /app/v2/wristband/unbind_device?did=RY.HP1.418337&device_token=XM9P412v5GgDzgo%2F HTTP/1.1" 200 68
+DEBUG    root:Log.py:69 [DEBUG 2020-08-25 20:24:13]respones没有字段

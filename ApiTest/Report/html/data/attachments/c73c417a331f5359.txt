@@ -1,0 +1,7 @@
+Test Start***********************
+200
+{"ts":1598516775069,"code":"1","msg":"","data":{"user_center_id":"1789d9dcfa9f62f6b41e689881ce3f58","access_token":"lvtx.BUw+uRLXAr5rJsMgn/ldCzxhLjtWBjGhgdqT1J2IzrpYS1ZacSEMjAyZUlC2HRBU5Lof8sm27A4oVJeuZsHTDRyxQ0qRZjPo3B5s1NJEjsEJQZyA1WJSTLsL8V+nkY9zCBiuKDbbId3LuORjm3/lO+lK7nHPBKjVkEY1rAKcuaTw9wyVrxJ1oKlHBW3moypU909HMw==","refresh_token":"lvtx./8hWonJwYMvfT9HGXxcuHC4uU8cJ6r8KDYdF5ITzrk24S0xzc3larSRzr4sZg4b8zkP9BtftrAQwJ1Kb9qGn5Yn3+yPkH3Bg3ioYvB0R9D+SLQHfMiLD2C681TSHJoR4MxJfcR0aaEiNcu5KoGc7FU3lzbCZh9g8pUQVbI1PatPRfZDArhjsaao7sDZAbCRtmXgf6g=="}}
+200
+{"code": 1, "message": "OK", "data": {"rst": "4e+eC0vsmkRbUGAG"}, "current": 0, "total": 0}
+{u'code': 1, 'status_code': 200, u'current': 0, u'message': u'OK', u'total': 0, u'data': {u'rst': u'OK'}, 'time_total': 1.037555}
+Test End***********************

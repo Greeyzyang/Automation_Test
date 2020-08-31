@@ -1,0 +1,102 @@
+{
+  "uid" : "2726949317f67c8d",
+  "name" : "test_unbind_device001",
+  "fullName" : "TestCase.Test_Unbind_Device.TestClass#test_unbind_device001",
+  "historyId" : "655cc3d1785921d55ac53aec14b27ee0",
+  "time" : {
+    "start" : 1598424580440,
+    "stop" : 1598424584425,
+    "duration" : 3985
+  },
+  "description" : "验证不同场景解除绑定手环",
+  "descriptionHtml" : "<p>验证不同场景解除绑定手环</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "验证不同场景解除绑定手环",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "绑定手环成功",
+      "time" : {
+        "start" : 1598424582726,
+        "stop" : 1598424583635,
+        "duration" : 909
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "385a652aacbfcdad",
+      "name" : "log",
+      "source" : "385a652aacbfcdad.txt",
+      "type" : "text/plain",
+      "size" : 1777
+    }, {
+      "uid" : "71db3045128fda9a",
+      "name" : "stdout",
+      "source" : "71db3045128fda9a.txt",
+      "type" : "text/plain",
+      "size" : 116
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "解除绑定手环"
+  }, {
+    "name" : "story",
+    "value" : "传入正常的参数，解除绑定手环成功"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "suite",
+    "value" : "Test_Unbind_Device"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-5J7K0KVJ"
+  }, {
+    "name" : "thread",
+    "value" : "23484-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython2"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.Test_Unbind_Device"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2726949317f67c8d.json",
+  "parameterValues" : [ ]
+}

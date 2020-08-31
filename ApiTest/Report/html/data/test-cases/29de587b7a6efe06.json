@@ -1,0 +1,82 @@
+{
+  "uid" : "29de587b7a6efe06",
+  "name" : "test_unbind_device001",
+  "fullName" : "TestCase.Test_Unbind_Device.TestClass#test_unbind_device001",
+  "historyId" : "655cc3d1785921d55ac53aec14b27ee0",
+  "time" : {
+    "start" : 1598358251928,
+    "stop" : 1598358253002,
+    "duration" : 1074
+  },
+  "status" : "broken",
+  "statusMessage" : "KeyError: 'code'",
+  "statusTrace" : "self = <Test_Unbind_Device.TestClass instance at 0x046DFBE8>\n\n    @allure.feature('解除绑定手环')\n    def test_unbind_device001(self):\n        r = Request().post_wirst_request(self.method, self.url, self.parm, header=self.headers)\n>       Assertions().assert_code(r['code'], self.expect['code'])\nE       KeyError: 'code'\n\nTestCase\\Test_Unbind_Device.py:68: KeyError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "KeyError: 'code'",
+    "statusTrace" : "self = <Test_Unbind_Device.TestClass instance at 0x046DFBE8>\n\n    @allure.feature('解除绑定手环')\n    def test_unbind_device001(self):\n        r = Request().post_wirst_request(self.method, self.url, self.parm, header=self.headers)\n>       Assertions().assert_code(r['code'], self.expect['code'])\nE       KeyError: 'code'\n\nTestCase\\Test_Unbind_Device.py:68: KeyError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e0b09af1b2932dba",
+      "name" : "log",
+      "source" : "e0b09af1b2932dba.txt",
+      "type" : "text/plain",
+      "size" : 1366
+    }, {
+      "uid" : "d46ccc58e9ac7de",
+      "name" : "stdout",
+      "source" : "d46ccc58e9ac7de.txt",
+      "type" : "text/plain",
+      "size" : 116
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "解除绑定手环"
+  }, {
+    "name" : "suite",
+    "value" : "Test_Unbind_Device"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-5J7K0KVJ"
+  }, {
+    "name" : "thread",
+    "value" : "17156-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython2"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.Test_Unbind_Device"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "29de587b7a6efe06.json",
+  "parameterValues" : [ ]
+}

@@ -15,6 +15,7 @@
 1：登录app成功
 2：成功生成token
 3：绑定手环成功
+4：解除绑定手环成功
 '''
 
 
@@ -63,7 +64,7 @@ class TestClass:
     @allure.story(case_name)
     @allure.severity('blocker')
     def test_unbind_device001(self):
-        Returndata = Moudle().bind_device()
+        Returndata = Moudle("Wristband_Alpha").bind_device()
         self.parm['device_token'] = Returndata[0]
         self.headers = Returndata[1]
         r = Request().post_wirst_request(method=self.method, url=self.url, data=self.parm, header=self.headers)

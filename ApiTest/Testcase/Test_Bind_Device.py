@@ -7,15 +7,15 @@
 
 '''
 测试步骤：
-1：登录App（获取平台token）
-2：传参正常，绑定手环（生成手环token，绑定手环）
+1：登录app（https://test-api.wyzecam.com/app/user/login）
+2：生成手环token（https://test-wristband-service.wyzecam.com/app/v2/wristband/generate_token）
+3：绑定手环（https://test-wristband-service.wyzecam.com//app/v2/wristband/bind_device）
 
 预期结果：
-1：成功登录App，并返回token值
-2：成功绑定手环，响应信息返回"rst: OK"
-
+1：登录app成功
+2：成功生成token
+3：绑定手环成功
 '''
-
 
 import pytest
 import os

@@ -16,6 +16,8 @@ from ApiTest.Common.Request import Request
 from ApiTest.Common.Log import MyLog
 from ApiTest.Common.Assert import Assertions
 from ApiTest.Common.Session import Session
+
+
 """
 封装业务功能，类似UI自动化page object设计模式
 *******************************************************
@@ -120,9 +122,69 @@ class Moudle(object):
         r = Request().post_wirst_request(method="post", url=self.get_sleep_url, data=self.get_sleep_parm, header=self.headers)
         Assertions().assert_code(r['status_code'], 200)
 
+    @allure.step("获取步数统计数据成功")
+    def get_step(self):
+        self.get_step_url = self.host + "/app/v2/wristband/get_step"
+        start_time = datetime.datetime.now().strftime("%Y-%m-%d")
+        end_time = (datetime.datetime.now() + datetime.timedelta(days=6)).strftime("%Y-%m-%d")
+        self.get_step_parm = {
+            "type": "multiday",
+	        "start": start_time,
+	        "end": end_time,
+	        "tz": "Asia\/Shanghai"
+        }
+        r = Request().post_wirst_request(method="post", url=self.get_step_url, data=self.get_step_parm, header=self.headers)
+        Assertions().assert_code(r['status_code'], 200)
 
+    @allure.step("获取心率统计数据成功")
+    def get_heart_rate(self):
+        self.get_heart_rate_url = self.host + "/app/v2/wristband/get_heart_rate"
+        start_time = datetime.datetime.now().strftime("%Y-%m-%d")
+        end_time = (datetime.datetime.now() + datetime.timedelta(days=6)).strftime("%Y-%m-%d")
+        self.get_heart_rate_parm = {
+            "type": "multiday",
+	        "start": start_time,
+	        "end": end_time,
+	        "tz": "Asia\/Shanghai"
+        }
+        r = Request().post_wirst_request(method="post", url=self.get_heart_rate_url, data=self.get_heart_rate_parm, header=self.headers)
+        Assertions().assert_code(r['status_code'], 200)
 
+    @allure.step("获取运动历史成功")
+    def get_sport_history(self):
+        self.get_sport_history_url = self.host + "/app/v2/wristband/get_sport_history"
+        self.get_sport_history_parm = {
+	        "skip": 0,
+	        "limit": 50,
+	        "tz": "Asia\/Shanghai"
+        }
+        r = Request().post_wirst_request(method="post", url=self.get_sport_history_url, data=self.get_sport_history_parm, header=self.headers)
+        Assertions().assert_code(r['status_code'], 200)
 
+    @allure.step("获取某天的心率成功")
+    def get_heart_rate_history(self):
+        self.get_heart_rate_history_url = self.host + "/app/v2/wristband/get_heart_rate_history"
+        start_time = datetime.datetime.now().strftime("%Y-%m-%d")
+        self.get_heart_rate_history_parm = {
+	        "date": start_time,
+	        "tz": "Asia\/Shanghai"
+        }
+        r = Request().post_wirst_request(method="post", url=self.get_heart_rate_history_url, data=self.get_heart_rate_history_parm, header=self.headers)
+        Assertions().assert_code(r['status_code'], 200)
+
+    @allure.step("获取手环背景图成功")
+    def get_band_bg_list(self):
+        self.get_band_bg_list_url = self.host + "/app/v2/wristband/get_band_bg_list"
+        self.get_band_bg_list_parm = {}
+        r = Request().post_wirst_request(method="get", url=self.get_band_bg_list_url, data=self.get_band_bg_list_parm, header=self.headers)
+        Assertions().assert_code(r['status_code'], 200)
+
+    # @allure.step("上传手环背景图成功")
+    # def upload_band_bg(self):
+    #     self.upload_band_bg_url = self.host + "/app/v2/wristband/upload_band_bg"
+    #     self.upload_band_bg_parm = {}
+    #     r = Request().post_wirst_request(method="post", url=self.upload_band_bg_url, data=self.upload_band_bg_parm, header=self.headers)
+    #     Assertions().assert_code(r['status_code'], 200)
 # if __name__ == '__main__':
 #     A = Moudle().bind_device()
 #     print(A)

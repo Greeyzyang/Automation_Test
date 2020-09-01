@@ -15,8 +15,13 @@
 5：获取设备对应的默认自动连接设置（https://test-wristband-service.wyzecam.com/app/v2/wristband/get_defaultconn）
 6：获取版本对应的功能列表（不包括基础功能）（https://test-wristband-service.wyzecam.com/app/v2/wristband/get_functions）
 7：上传数据（https://test-wristband-service.wyzecam.com/app/v2/wristband/data_upload）
-8：
-
+8：获取睡眠数据（https://test-wristband-service.wyzecam.com/app/v2/wristband/get_sleep）
+9：获取步数统计数据（https://test-wristband-service.wyzecam.com/app/v2/wristband/get_step）
+10：获取心率统计数据（https://test-wristband-service.wyzecam.com/app/v2/wristband/get_heart_rate）
+11：获取运动历史 （https://test-wristband-service.wyzecam.com/app/v2/wristband/get_sport_history）
+12：获取某天的心率（https://test-wristband-service.wyzecam.com/app/v2/wristband/get_heart_rate_history）
+13：获取手环背景图（https://test-wristband-service.wyzecam.com/app/v2/wristband/get_band_bg_list）
+14：解除绑定手环（https://test-wristband-service.wyzecam.com/app/v2/wristband/unbind_device）
 
 预期结果：
 1：登录app成功
@@ -25,7 +30,14 @@
 4：设置默认连接的key成功
 5：获取设备对应的默认自动连接设置成功
 6：获取版本对应的功能列表成功
-7：上传数据
+7：上传数据成功
+8：获取睡眠数据成功
+9：获取步数统计数据成功
+10：获取心率统计数据成功
+11：获取运动历史成功
+12：获取某天的心率成功
+13：获取手环背景图成功
+14：解除绑定手环成功
 '''
 
 
@@ -68,6 +80,12 @@ class TestClass:
         self.moudle.get_defaultconn()                           #获取设备对应的默认自动连接设置
         self.moudle.get_functions()                             #获取版本对应的功能列表（不包括基础功能）
         self.moudle.data_upload()                               #上传数据
+        self.moudle.get_sleep()                                 #获取睡眠数据
+        self.moudle.get_step()                                  #获取步数统计数据
+        self.moudle.get_heart_rate()                            #获取心率统计数据
+        self.moudle.get_sport_history()                         #获取运动历史
+        self.moudle.get_heart_rate_history()                    #获取某天的心率
+        self.moudle.get_band_bg_list()                          #获取手环背景图
 
 
 if __name__ == '__main__':

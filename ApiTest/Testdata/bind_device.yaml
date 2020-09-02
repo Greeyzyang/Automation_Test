@@ -1,12 +1,14 @@
 bind_device:
   - case_name: 传入正常的参数，绑定手环成功
     method: post
-    url: /app/v2/wristband/bind_device
+    url: /app/v3/user/bind
+#    url: /app/v2/wristband/bind_device
     parm :
+      tz: Asia/Shanghai
       did: RY.HP1.418337
       mac: 2C:AA:8E:00:AB:95
-      nonce: 193802959
-      sn: 139
+      nonce: 81461570
+      sn: 202
       sign: AAAAAAAAAAAAAAAAAAAAABAKZtfz8dJ2Wfz+08kLLGpzmH\/SncS+UQ+jGNRaMlzH
       sign_version: 2
       model: RY.HP1
@@ -15,7 +17,7 @@ bind_device:
       code: 1
       message : OK
       data:
-        rst: OK
+        rst: true
   #    current: 0
   #    total: 0
       respones_time: 3

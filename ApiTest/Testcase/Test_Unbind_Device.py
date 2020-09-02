@@ -64,7 +64,7 @@ class TestClass:
     @allure.story(case_name)
     @allure.severity('blocker')
     def test_unbind_device001(self):
-        Returndata = Moudle("Wristband_Alpha").bind_device()
+        Returndata = Moudle("Wristband_Alpha").bind()
         self.parm['device_token'] = Returndata[0]
         self.headers = Returndata[1]
         r = Request().post_wirst_request(method=self.method, url=self.url, data=self.parm, header=self.headers)
@@ -73,7 +73,7 @@ class TestClass:
         Assertions().assert_code(r['status_code'], self.expect['status_code'])
         Assertions().assert_time(r['time_total'], self.expect['respones_time'])
         Assertions().assert_code(r['message'], self.expect['message'])
-        Assertions().assert_code(r['data'], self.expect['data'])
+        Assertions().assert_code(r['data']['rst'], self.expect['data']['rst'])
 
 if __name__ == '__main__':
      pytest.main()

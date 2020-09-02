@@ -157,21 +157,23 @@ class Session(object):
             phoneid = self.config.get_value("General_variable", "phone_id")
             appinfo = self.config.get_value("Wristband_Alpha", "appinfo")
             apikey = self.config.get_value("Wristband_Alpha", "apikey")
-            #userinfo_url = self.config.get_value("Wristband_Alpha", "userinfo_url")
-            parm = {}
+            model = self.config.get_value("Wristband_Alpha", "model")
+            tz = self.config.get_value("Wristband_Alpha", "tz")
+            #firmware_ver = self.config.get_value("Wristband_Alpha", "firmware_ver")
+            parm = {"tz": "Asia/Shanghai"}
             wristband_header = {}
             wristband_header['access_token'] = Session().get_platfolm_session("Platfolm_Alpha")
             wristband_header['phoneid'] = phoneid
             wristband_header['appinfo'] = appinfo
             wristband_header['requestid'] = hashlib.md5(str(time.clock()).encode('utf-8')).hexdigest()              #模拟唯一的request id
             wristband_header['apikey'] = apikey
+            wristband_header['model'] = model
+            wristband_header['tz'] = tz
+            wristband_header['firmware_ver'] = ''                                                                    #生成token值之前'firmware_ver'字段为空
             login_host = login_host.encode('utf-8')
             login_url = login_url.encode('utf-8')
-            #userinfo_url = userinfo_url.encode('utf-8')
             new_url = login_host + login_url
-            #new_userinfo_url = login_host + userinfo_url
-            wristband_header = json.dumps(wristband_header)
-            wristband_header = eval(wristband_header)
+            # wristband_header = json.dumps(wristband_header)
             new_header = dict(wristband_header, **headers)                                                             #合并2个字典组成一个新的header
             session_wristband_alpha = requests.session()
             session_wristband_alpha.mount(login_host, DESAdapter())                                                    #解决出现ssl.c661的问题
@@ -188,9 +190,11 @@ class Session(object):
             phoneid = self.config.get_value("General_variable", "phone_id")
             appinfo = self.config.get_value("Wristband_Beta", "appinfo")
             apikey = self.config.get_value("Wristband_Beta", "apikey")
-            #appid = self.config.get_value("Wristband_Beta", "appid")
-            #userinfo_url = self.config.get_value("Wristband_Beta", "userinfo_url")
-            parm = {}
+            apikey = self.config.get_value("Wristband_Beta", "apikey")
+            model = self.config.get_value("Wristband_Beta", "model")
+            tz = self.config.get_value("Wristband_Beta", "tz")
+            #firmware_ver = self.config.get_value("Wristband_Beta", "firmware_ver")
+            parm = {"tz": "Asia/Shanghai"}
             wristband_header = {}
             wristband_header['access_token'] = Session().get_platfolm_session("Platfolm_Beta")
             wristband_header['access_token'] = wristband_header['access_token'].decode("utf-8")                    #将unicode类型转换为str类型
@@ -198,18 +202,16 @@ class Session(object):
             wristband_header['appinfo'] = appinfo
             wristband_header['requestid'] = hashlib.md5(str(time.clock()).encode('utf-8')).hexdigest()              #模拟唯一的request id
             wristband_header['apikey'] = apikey
-            #wristband_header['appid'] = appid
+            wristband_header['model'] = model
+            wristband_header['tz'] = tz
+            wristband_header['firmware_ver'] = ''
             login_host = login_host.encode('utf-8')
             login_url = login_url.encode('utf-8')
-            #userinfo_url = userinfo_url.encode('utf-8')
             new_url = login_host + login_url
-            #new_userinfo_url = login_host + userinfo_url
-            wristband_header = json.dumps(wristband_header)
-            wristband_header = eval(wristband_header)                                                                  #将字符串转换为字典
+            # wristband_header = json.dumps(wristband_header)
             new_header = dict(wristband_header, **headers)                                                             #合并2个字典组成一个新的header
             session_wristband_beta = requests.session()
             session_wristband_beta.mount(login_host, DESAdapter())
-            #session_wristband_beta.post(new_userinfo_url, parm, headers=new_header, verify=False)                      # /app/v2/wristband/user_info
             respones = session_wristband_beta.post(new_url, parm, headers=new_header, verify=False)                    #verify=False,解决SSL 根证书验错误
             print(respones.status_code)
             print(respones.content)
@@ -219,7 +221,7 @@ class Session(object):
         else:
             self.log.error(u'不存在当前环境信息，请检查')
 
-if __name__ == '__main__':
-    # A = Session().get_platfolm_session('Platfolm_Alpha')
-    A = Session().get_wristband_session('Wristband_Alpha')
-    print(A)
+# if __name__ == '__main__':
+#     # A = Session().get_platfolm_session('Platfolm_Alpha')
+#     A = Session().get_wristband_session('Wristband_Alpha')
+#     print(A)

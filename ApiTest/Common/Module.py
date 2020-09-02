@@ -41,29 +41,32 @@ class Moudle(object):
         self.log = MyLog()
         # env2 = "Wristband_Alpha"
         self.host = self.config.get_value(env2, "host")
+        firmware_ver = self.config.get_value(env2, "firmware_ver")
         self.Returndata = Session().get_wristband_session(env2)
         # self.method = "post"
         self.headers = self.Returndata[1]
+        self.headers['firmware_ver'] = firmware_ver                                                                   #生成token值之后'firmware_ver'字段获取设备的'version'值
 
     @allure.step("获取设备Token成功")
     def get_token(self):
         self.get_token_url = self.host + "/app/v2/wristband/get_token"
-        self.get_token_parm = {}
+        self.get_token_parm = {"tz": "Asia/Shanghai"}
         rdict = Request().post_wirst_request(method="post", url=self.get_token_url, data=self.get_token_parm, header=self.headers)
         Assertions().assert_code(rdict['status_code'], 200)
 
     @allure.step("获取用户信息成功")
     def user_info(self):
         self.user_info_url = self.host + "/app/v2/wristband/user_info"
-        self.user_info_parm = {}
+        self.user_info_parm = {"tz": "Asia/Shanghai"}
         rdict = Request().post_wirst_request(method="post", url=self.user_info_url, data=self.user_info_parm, header=self.headers)
         Assertions().assert_code(rdict['status_code'], 200)
         return rdict['data']['uid']
 
     @allure.step("绑定手环成功")
-    def bind_device(self):
-        self.bind_device_url = self.host + "/app/v2/wristband/bind_device"
-        self.bind_device_parm = {
+    def bind(self):
+        self.bind_url = self.host + "/app/v3/user/bind"
+        self.bind_parm = {
+            "tz": "Asia/Shanghai",
             "did": "RY.HP1.418337",
             "mac": "2C:AA:8E:00:AB:95",
             "nonce": 141361162,
@@ -73,28 +76,29 @@ class Moudle(object):
             "device_token": self.Returndata[0],
             "model": "RY.HP1"
         }
-        r = Request().post_wirst_request(method="post", url=self.bind_device_url, data=self.bind_device_parm, header=self.headers)
+        r = Request().post_wirst_request(method="post", url=self.bind_url, data=self.bind_parm, header=self.headers)
         Assertions().assert_code(r['status_code'], 200)
-        return self.bind_device_parm['device_token'], self.headers
+        self.device_token = self.bind_parm['device_token']
+        return self.device_token, self.headers
 
     @allure.step("设置默认连接的key成功")
     def set_defaultconn(self):
         self.set_defaultconn_url = self.host + "/app/v2/wristband/set_defaultconn"
-        self.set_defaultconn_parm = {"mac": "2C:AA:8E:00:AB:95", "keyid": "ab6aa7f445393ffb"}
+        self.set_defaultconn_parm = {"tz": "Asia/Shanghai", "mac": "2C:AA:8E:00:AB:95", "keyid": "ab6aa7f445393ffb"}
         r = Request().post_wirst_request(method="post", url=self.set_defaultconn_url, data=self.set_defaultconn_parm, header=self.headers)
         Assertions().assert_code(r['status_code'], 200)
 
     @allure.step("获取设备对应的默认自动连接设置成功")
     def get_defaultconn(self):
         self.get_defaultconn_url = self.host + "/app/v2/wristband/get_defaultconn"
-        self.get_defaultconn_parm = {"mac": "2C:AA:8E:00:AB:95"}
+        self.get_defaultconn_parm = {"tz": "Asia/Shanghai", "mac": "2C:AA:8E:00:AB:95"}
         r = Request().post_wirst_request(method="post", url=self.get_defaultconn_url, data=self.get_defaultconn_parm, header=self.headers)
         Assertions().assert_code(r['status_code'], 200)
 
     @allure.step("获取版本对应的功能列表（不包括基础功能）成功")
     def get_functions(self):
         self.get_functions_url = self.host + "/app/v2/wristband/get_functions"
-        self.get_functions_parm = {{"version":"2.12.0"}}
+        self.get_functions_parm = {"tz": "Asia/Shanghai", "version": "2.12.0"}
         r = Request().post_wirst_request(method="post", url=self.get_functions_url, data=self.get_functions_parm, header=self.headers)
         Assertions().assert_code(r['status_code'], 200)
 
@@ -102,6 +106,7 @@ class Moudle(object):
     def data_upload(self):
         self.data_upload_url = self.host + "/app/v2/wristband/data_upload"
         self.data_upload_parm = {
+            "tz": "Asia/Shanghai",
             "data": ["Cg1SWS5IUDEuNDE4MzM3Eg0IARIJCHyIAYCc7cgBEi4IARIqCAIaIwoeCPbisvoFELXvsvoFIAAoADAAOABAAEgAUIDhAVgAoAEAiAEA"],
             "tz": "Asia\/Shanghai"
         }
@@ -114,6 +119,7 @@ class Moudle(object):
         start_time = datetime.datetime.now().strftime("%Y-%m-%d")
         end_time = (datetime.datetime.now() + datetime.timedelta(days=6)).strftime("%Y-%m-%d")
         self.get_sleep_parm = {
+            "tz": "Asia/Shanghai",
             "type": "multiday",
 	        "start": start_time,
 	        "end": end_time,
@@ -128,6 +134,7 @@ class Moudle(object):
         start_time = datetime.datetime.now().strftime("%Y-%m-%d")
         end_time = (datetime.datetime.now() + datetime.timedelta(days=6)).strftime("%Y-%m-%d")
         self.get_step_parm = {
+            "tz": "Asia/Shanghai",
             "type": "multiday",
 	        "start": start_time,
 	        "end": end_time,
@@ -142,6 +149,7 @@ class Moudle(object):
         start_time = datetime.datetime.now().strftime("%Y-%m-%d")
         end_time = (datetime.datetime.now() + datetime.timedelta(days=6)).strftime("%Y-%m-%d")
         self.get_heart_rate_parm = {
+            "tz": "Asia/Shanghai",
             "type": "multiday",
 	        "start": start_time,
 	        "end": end_time,
@@ -154,6 +162,7 @@ class Moudle(object):
     def get_sport_history(self):
         self.get_sport_history_url = self.host + "/app/v2/wristband/get_sport_history"
         self.get_sport_history_parm = {
+            "tz": "Asia/Shanghai",
 	        "skip": 0,
 	        "limit": 50,
 	        "tz": "Asia\/Shanghai"
@@ -174,7 +183,7 @@ class Moudle(object):
 
     @allure.step("获取手环背景图成功")
     def get_band_bg_list(self):
-        self.get_band_bg_list_url = self.host + "/app/v2/wristband/get_band_bg_list"
+        self.get_band_bg_list_url = self.host + "/app/v2/wristband/get_band_bg_list?tz=Asia%2FShanghai"
         self.get_band_bg_list_parm = {}
         r = Request().post_wirst_request(method="get", url=self.get_band_bg_list_url, data=self.get_band_bg_list_parm, header=self.headers)
         Assertions().assert_code(r['status_code'], 200)
@@ -185,6 +194,29 @@ class Moudle(object):
     #     self.upload_band_bg_parm = {}
     #     r = Request().post_wirst_request(method="post", url=self.upload_band_bg_url, data=self.upload_band_bg_parm, header=self.headers)
     #     Assertions().assert_code(r['status_code'], 200)
+    @allure.step("用户打点数据上报成功")
+    def upload_taglog(self):
+        self.upload_taglog_url = self.host + "/app/v3/upload/taglog"
+        self.upload_taglog_parm = {
+	        "tz": "Asia/Shanghai",
+	        "datas": "CoMCCoACCiEKCE9QUE8gUjExEgE5GhBhYjZhYTdmNDQ1MzkzZmZiIAAySwpJCAgSLgoRMkM6QUE6OEU6MDA6QUI6OTUSDVJZLkhQMS40MTgzMzcaCDEuMC43Ljc5IgAaFQiijL36BRINQXNpYS9TaGFuZ2hhaTpBCj8KJgoRMkM6QUE6OEU6MDA6QUI6OTUSDVJZLkhQMS40MTgzMzcaACIAEhUImIy9+gUSDUFzaWEvU2hhbmdoYWlCSwpJCAYSLgoRMkM6QUE6OEU6MDA6QUI6OTUSDVJZLkhQMS40MTgzMzcaCDEuMC43Ljc5IgAaFQimjL36BRINQXNpYS9TaGFuZ2hhaQ=="
+}
+        r = Request().post_wirst_request(method="get", url=self.upload_taglog_url, data=self.upload_taglog_parm, header=self.headers)
+        Assertions().assert_code(r['status_code'], 200)
+
+    @allure.step("解除绑定手环成功")
+    def upload_taglog(self):
+        self.upload_taglog_url = self.host + "/app/v3/user/unbind"
+        self.upload_taglog_parm = {
+	        "tz": "Asia/Shanghai",
+            "did": "RY.HP1.418337",
+            "device_token": self.device_token
+}
+        r = Request().post_wirst_request(method="get", url=self.upload_taglog_url, data=self.upload_taglog_parm, header=self.headers)
+        Assertions().assert_code(r['status_code'], 200)
+
+
+
 # if __name__ == '__main__':
 #     A = Moudle().bind_device()
 #     print(A)

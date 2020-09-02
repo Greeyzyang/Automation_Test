@@ -1,14 +1,17 @@
 unbind_device:
   - case_name: 传入正常的参数，解除绑定手环成功
     method: post
-    url: /app/v2/wristband/unbind_device
+    url: /app/v3/user/unbind
+#    url: /app/v2/wristband/unbind_device
     parm:
+      tz: Asia/Shanghai
       did: RY.HP1.418337
     expect:
       status_code: 200
       code: 1
       message : OK
-      data: true
+      data:
+        rst: true
     #   current: 0
     #   total: 0
       respones_time: 3

@@ -367,3 +367,44 @@
 [DEBUG 2020-08-31 17:34:44]初始化测试数据
 [DEBUG 2020-08-31 17:34:45]platfolm_cookies: lvtx.7Aey4g+ZGujman//cq4+LFppDhISRcRbZPC6wUh4Dj4wQb5U6J4Fl7a3KTH67c+sEII+wU6cd+Zw19auBuOA2knH81hLrPLhmHL6fMM5LKDnmxm0iGM9goiO9rxZAyU/oL21Y/9/yVIGlWDsK7IQCLUmOdKcRfAbJoz30LBH2v6knjCCFeq8DtyxKdO4COG9ra8QXg==
 [DEBUG 2020-08-31 17:34:46]wristband_cookies: Ym3YkHYFBqVvkgAl
+[DEBUG 2020-09-02 15:50:34]初始化测试数据
+[DEBUG 2020-09-02 15:50:36]platfolm_cookies: lvtx.NITUCzgzA0HuCI4fN2XGOITY6pmIg5j8yyzSgkCqlsS7RG9sRcdUsXdcNOsqblMOPBWfBeDcDtLw6Y76ayc4fXmNqWjO6pQWn0sUdgOvxHEQq3Bz/CqKN6/9lScKr+QT+ShXTHrGC8StMRBvfj1O/y+HoSDn956EKvkh2+6+8QfNKSr81NKcX9tXs7ThQYMB6FaJng==
+[DEBUG 2020-09-02 15:52:20]platfolm_cookies: lvtx.liHVwz+TH7I/AtHYgcCQOdcALJMMxeNvf1BnVi+q59gyU/80MHh92nJnIZv8Yw5+D50Ss/AIe6LW2HsXs7z8JBvUd0nDGhk+8C7E5/e54rL+1bVZGjzijHiT/ZHHK5JuVDx/nifUWQmYhh7XZ/ajNoUcIj8I3RE0QPo8I4vzQNsVhA4elmgh3wN1GGTi+NGQMQ2bSg==
+[DEBUG 2020-09-02 15:52:58]platfolm_cookies: lvtx.02pT6KBWP8PvB7Os7X1VfPznv+mwVBjTykEex78NQvvXbpadT/0UaQCIcgq1jZQF2VdNsWU+ZZgiteplW2PulnwqDtQRzZmNPRgYLRSmRTrB5GvzfKxWlPo9dCu93O5WXPr2lEgcUQ40DXrZajOTc5Fqs40xGICWMBP48lPmTbfsWCjhiU3IWTrF+qbLerCVvrQH4g==
+[DEBUG 2020-09-02 15:53:23]platfolm_cookies: lvtx.hJAQ1nLfxO2xr1YvUkhlQDCRa0cyGA5rLjnaRsDlVKe2r9y2300JsFhtqU4PH+NN/ykGljE4L29jzxquymuAKEts+17Q61tk6fHd0PgzTe+oR1olWMkVd/mXxoiZAih4+79H5fe5IG/PZ97WVBGbMHQOXdVvKWIndORgMpkcUKeqngUovDAIWnXcPFMMLyAVjPrrzA==
+[DEBUG 2020-09-02 15:53:23]wristband_cookies: LC0dc3kiWNXbT7R7
+[DEBUG 2020-09-02 15:55:29]初始化测试数据
+[DEBUG 2020-09-02 15:55:31]platfolm_cookies: lvtx.voTU7iYeM4mvWbgOJpHvP0w0Jf326e8jTWOxLgRmGlKJA1Kj3iouHQOKnXuT31KcT6791IkTmPeZFZKlqSxipuTdyzTFGafRVK2SpbSsbzx8sD1LRaoP+wNx8W+oqNq+wrfbVuNJJKt2Toww680aqIJjKHj/QP5EZw6o9B/DEINME2Bz46yCer65yLR5Oz+BFs/X5A==
+[DEBUG 2020-09-02 15:55:31]wristband_cookies: TCoSb8XcP2Ka7Tbo
+[ERROR 2020-09-02 15:55:33]response状态码验证失败，预期结果为1,实际结果为1001
+[DEBUG 2020-09-02 15:56:01]初始化测试数据
+[DEBUG 2020-09-02 15:56:02]platfolm_cookies: lvtx.H1qquLOsfJgK1Il/qa7ZIuTlGYE268g/4VTHM0Z3t6STUkFMDLX8AINZoQAO8zpoc/00IGXHV9JzKQC5Wm4vrZETAt1qqaCJxktzbNkLt6W1IfwHskWDp2fNlTBNt5D82Ivyb29GhxOA5YpGO4+ugbngrq7VfiSJdeysXUZC4/Xj+P+ieFjPDHIf7BSaAeUbWWeooQ==
+[DEBUG 2020-09-02 15:56:03]wristband_cookies: HDtF5ze5vADXeaJ2
+[DEBUG 2020-09-02 16:04:06]初始化测试数据
+[DEBUG 2020-09-02 16:04:08]platfolm_cookies: lvtx.QNd5OTv/KVOwnEwqpqOxbSZpaPZaBsfpSX2Kn6RWb5MaH5u//CAdj9+OYxbd1qSHCPr+9t3R/PRUKIwCIF6rwVd2NZJb/dW9G7siTKx5YAm2QXyAFhptCFs8dKQhHvioIHRlrTbtHmL9eSopfyL74VntdFBlxvpHitmqU5aVbKhUkFssouJ31cIHC/ATx1+pnglaWw==
+[DEBUG 2020-09-02 16:04:09]wristband_cookies: Mp5jFIq13fpfcn7v
+[ERROR 2020-09-02 16:04:09]response状态码验证失败，预期结果为200,实际结果为400
+[DEBUG 2020-09-02 16:05:05]初始化测试数据
+[DEBUG 2020-09-02 16:05:52]platfolm_cookies: lvtx.zU6j5Rf094ZcOavCLrivhR609DJCFIyiUZA15MgIggjhQ4rxR7x72ULdOGiotp9J1e4PbZSH43HuTJERhq8lnmXeYeD7M8+mi8wSY++u2D6EykqXMpIUMrAe5Qd5h4vz89tjlI4sTojT0Br74AJISclNRjd+2CgAJtEgRl3GmafIxN0gaPmJqml3gBnYP9WimKcKLA==
+[DEBUG 2020-09-02 16:05:53]wristband_cookies: +7mrsfU6orYvigYW
+[DEBUG 2020-09-02 16:07:29]初始化测试数据
+[DEBUG 2020-09-02 16:07:35]platfolm_cookies: lvtx.upwm/VUBvFtUPwfqxQsyyzdPIhn7zuCRAcLpX8v3pm++e9VObPZGBY5d2oZds3Y4DfTaqPnBj+npriTPMfVcmDJOgL7Ol7wEg9Sqcebd1KQOw3k+7SPn8bT62HDz73gYVTYqY+L1WJCF6S0FDXZocJVBVNNStk75aLRlCLxLbhgQvW57rWTPcKv1HFOMMPnyfOVpgw==
+[DEBUG 2020-09-02 16:07:36]wristband_cookies: IrUTMmyzd739/q6s
+[DEBUG 2020-09-02 16:09:07]初始化测试数据
+[DEBUG 2020-09-02 16:09:08]platfolm_cookies: lvtx.WH/BpV97nWJclsltaOnO9PwxevZDvcyDq8lXai4DWj3hYItp+u1LPtuuxT/4PEv94d5KBxtY2JRTA9eI0Ddjs9r7tBFMAg5WEGWEIF8McRDcdj1FdbYl9B/Tt2Akbtd1dV66Cj7VTmwssM+sY7nf6MHwMRbHO8OJd2dLsNiZjppuuPOBl8NYkulPLENO4JfoSvrNUg==
+[DEBUG 2020-09-02 16:09:09]wristband_cookies: /EWNyWhJ1q5CzR55
+[ERROR 2020-09-02 16:09:11]response状态码验证失败，预期结果为True,实际结果为{u'rst': True}
+[DEBUG 2020-09-02 16:10:44]初始化测试数据
+[DEBUG 2020-09-02 16:10:46]platfolm_cookies: lvtx./cWMzseysuXjZMInufoW6Ncn3usJAWy3+oe4K7JQQlgHxy1kMeW/5L8QOp3rE/g6z9nZtDVsclohl+uWDbj9TarKrYmwb/ytaVIiM7r0YEJjQ0eqOgmh+d7jieYT3CbhA/HoxTKc75raFj2ynkHEDyYEl4/cHtHinRrEZjD4RiGDJzbZIZBYKCXw2HW1u9gC+jD+3w==
+[DEBUG 2020-09-02 16:10:47]wristband_cookies: IyNVaF8oyNwuKrq7
+[ERROR 2020-09-02 16:10:49]response状态码验证失败，预期结果为true,实际结果为{u'rst': True}
+[DEBUG 2020-09-02 16:11:30]初始化测试数据
+[DEBUG 2020-09-02 16:11:40]platfolm_cookies: lvtx.royixCkNYo/tETV+Tzha3GL5lk9CXlO9z4BfLn6QT/MP35hHk8srHlnNkByzvjXEF3OTmKOUE7QeSlp3Thr+oBQdrq8EK+U6N8f9bAt2njWy9bGsg6sXRKUb+mu3NeK6+brvxuNarqyBQYmf1p1kWZfJh1KAI9SOb7MTkmaiEJ2WlyVyrWEZhuVNiEHsXzwoyhdxZg==
+[DEBUG 2020-09-02 16:11:41]wristband_cookies: MXGzg2qVyZb6R3J9
+[ERROR 2020-09-02 16:11:44]response状态码验证失败，预期结果为True,实际结果为{u'rst': True}
+[DEBUG 2020-09-02 16:13:53]初始化测试数据
+[DEBUG 2020-09-02 16:13:54]platfolm_cookies: lvtx.kpCGy/w9ZuR2MGNNZa2lM+4sSW/8uS3kSN8stDVfTg+IxAZ3Ol1XLjHReWnaYiV0v/wM5S4PN/0YgCqX1tosjuG25FdZp3U9oDbXXBdr8cmIXghVgCeoau8HiyFPI/D34fXP2jD3FtDZhcGDTMKVCBnkx6RArhrzMuVAzAMAcGqBgTDkWAC+8KBnAYyerwTsyWuxlA==
+[DEBUG 2020-09-02 16:13:55]wristband_cookies: y/H84nFNFlXiN1eB
+[DEBUG 2020-09-02 16:22:18]初始化测试数据
+[DEBUG 2020-09-02 16:22:19]platfolm_cookies: lvtx.uCC3gRaC54b4/gSnNRH9CeoEz9op24eeNA3GJjmTVDgd6F9Vek+/7352kepqAbslYJnrjM3+Yq3KJvXnPjxhGF/D+oxpRZOq1lrMfqwP8vx/FBruv3+6bCidnYH6f+7m2vzEOh3/C7u0QlEfdysom+iBAE6HMD+iE5P//X9W5uhEIub57YLZa3/ZynZp2MHtNx1f7A==
+[DEBUG 2020-09-02 16:22:20]wristband_cookies: 5hSlCovRG0F6BV1b

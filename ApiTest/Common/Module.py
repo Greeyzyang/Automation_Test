@@ -185,7 +185,7 @@ class Moudle(object):
     def get_band_bg_list(self):
         self.get_band_bg_list_url = self.host + "/app/v2/wristband/get_band_bg_list?tz=Asia%2FShanghai"
         self.get_band_bg_list_parm = {}
-        r = Request().post_wirst_request(method="get", url=self.get_band_bg_list_url, data=self.get_band_bg_list_parm, header=self.headers)
+        r = Request().get_wirst_request(method="get", url=self.get_band_bg_list_url, data=self.get_band_bg_list_parm, header=self.headers)
         Assertions().assert_code(r['status_code'], 200)
 
     # @allure.step("上传手环背景图成功")
@@ -201,18 +201,18 @@ class Moudle(object):
 	        "tz": "Asia/Shanghai",
 	        "datas": "CoMCCoACCiEKCE9QUE8gUjExEgE5GhBhYjZhYTdmNDQ1MzkzZmZiIAAySwpJCAgSLgoRMkM6QUE6OEU6MDA6QUI6OTUSDVJZLkhQMS40MTgzMzcaCDEuMC43Ljc5IgAaFQiijL36BRINQXNpYS9TaGFuZ2hhaTpBCj8KJgoRMkM6QUE6OEU6MDA6QUI6OTUSDVJZLkhQMS40MTgzMzcaACIAEhUImIy9+gUSDUFzaWEvU2hhbmdoYWlCSwpJCAYSLgoRMkM6QUE6OEU6MDA6QUI6OTUSDVJZLkhQMS40MTgzMzcaCDEuMC43Ljc5IgAaFQimjL36BRINQXNpYS9TaGFuZ2hhaQ=="
 }
-        r = Request().post_wirst_request(method="get", url=self.upload_taglog_url, data=self.upload_taglog_parm, header=self.headers)
+        r = Request().post_wirst_request(method="post", url=self.upload_taglog_url, data=self.upload_taglog_parm, header=self.headers)
         Assertions().assert_code(r['status_code'], 200)
 
     @allure.step("解除绑定手环成功")
-    def upload_taglog(self):
-        self.upload_taglog_url = self.host + "/app/v3/user/unbind"
-        self.upload_taglog_parm = {
+    def unbind(self):
+        self.unbind_url = self.host + "/app/v3/user/unbind"
+        self.unbind_parm = {
 	        "tz": "Asia/Shanghai",
             "did": "RY.HP1.418337",
             "device_token": self.device_token
 }
-        r = Request().post_wirst_request(method="get", url=self.upload_taglog_url, data=self.upload_taglog_parm, header=self.headers)
+        r = Request().post_wirst_request(method="post", url=self.unbind_url, data=self.unbind_parm, header=self.headers)
         Assertions().assert_code(r['status_code'], 200)
 
 

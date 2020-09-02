@@ -22,7 +22,7 @@
 12：获取某天的心率（https://test-wristband-service.wyzecam.com/app/v2/wristband/get_heart_rate_history）
 13：获取手环背景图（https://test-wristband-service.wyzecam.com/app/v2/wristband/get_band_bg_list）
 14：用户打点数据上报（https://test-wristband-service.wyzecam.com/app/v3/upload/taglog）
-15：解除绑定手环（https://test-wristband-service.wyzecam.com/app/v2/wristband/unbind_device）
+15：解绑手环（https://test-wristband-service.wyzecam.com/app/v2/wristband/unbind_device）
 
 预期结果：
 1：登录app成功
@@ -39,7 +39,7 @@
 12：获取某天的心率成功
 13：获取手环背景图成功
 14：用户打点数据上报成功
-15：解除绑定手环成功
+15：解绑手环成功
 '''
 
 
@@ -76,8 +76,7 @@ class TestClass:
     def test_wyzeband_smoke(self):
         self.moudle.get_token()                                 #获取设备Token
         self.moudle.user_info()                                 #获取用户信息
-        Returndata = self.moudle.bind()                         #生成设备token
-        self.parm['device_token'] = Returndata[0]             #返回device_token
+        self.moudle.bind()                                      #绑定手环
         self.moudle.set_defaultconn()                           #设置默认连接的key
         self.moudle.get_defaultconn()                           #获取设备对应的默认自动连接设置
         self.moudle.get_functions()                             #获取版本对应的功能列表（不包括基础功能）
@@ -89,6 +88,7 @@ class TestClass:
         self.moudle.get_heart_rate_history()                    #获取某天的心率
         self.moudle.get_band_bg_list()                          #获取手环背景图
         self.moudle.upload_taglog()                             #用户打点数据上报
+        self.moudle.unbind()                                    #解绑手环
 
 
 if __name__ == '__main__':

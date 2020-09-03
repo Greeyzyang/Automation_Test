@@ -22,7 +22,7 @@
 12：获取某天的心率（https://test-wristband-service.wyzecam.com/app/v2/wristband/get_heart_rate_history）
 13：获取手环背景图（https://test-wristband-service.wyzecam.com/app/v2/wristband/get_band_bg_list）
 14：用户打点数据上报（https://test-wristband-service.wyzecam.com/app/v3/upload/taglog）
-15：解绑手环（https://test-wristband-service.wyzecam.com/app/v2/wristband/unbind_device）
+15：解绑手环（https://test-wristband-service.wyzecam.com/app/v3/user/unbind）
 
 预期结果：
 1：登录app成功
@@ -58,7 +58,7 @@ from ApiTest.Common.Module import Moudle
 
 
 
-@allure.feature('解除绑定手环')
+@allure.feature('wyzeband接口业务流程')
 @allure.description('验证不同场景解除绑定手环')
 class TestClass:
     def setup(self):
@@ -71,7 +71,7 @@ class TestClass:
     def teardown(self):
         print("Test End")
 
-    @allure.story("wyzeband smoke test")
+    @allure.story("wyzeband通过性验证")
     @allure.severity('blocker')
     def test_wyzeband_smoke(self):
         self.moudle.get_token()                                 #获取设备Token

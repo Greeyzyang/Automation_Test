@@ -10,6 +10,6 @@ import pytest
 
 
 if __name__ == '__main__':
-    pytest.main(['-s', '-q', '--alluredir', 'C:/Users/EDZ/PycharmProjects/untitled/Jenkins/workspace/Api_Autotest/allure-results', 'Test_WyzeBand_Smoke.py'])
+     pytest.main(['-s', '-q', '--alluredir', 'C:/Users/EDZ/PycharmProjects/untitled/Jenkins/workspace/Api_Autotest/allure-results', 'C:\Users\EDZ\PycharmProjects\untitled\ApiTest\Testcase\Test_WyzeBand_Smoke.py'])
     #pytest.main(['--alluredir', 'C:/Users/EDZ/PycharmProjects/untitled/Jenkins/workspace/Api_Autotest/allure-results'])
     # os.system('allure generate C:/Users/EDZ/PycharmProjects/untitled/ApiTest/Report/xml -o C:/Users/EDZ/PycharmProjects/untitled/ApiTest/Report/html --clean')

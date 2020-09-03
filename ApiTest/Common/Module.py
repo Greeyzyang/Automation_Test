@@ -62,7 +62,7 @@ class Moudle(object):
         Assertions().assert_code(rdict['status_code'], 200)
         return rdict['data']['uid']
 
-    @allure.step("绑定手环成功")
+    @allure.step("生成手环token，绑定手环成功")
     def bind(self):
         self.bind_url = self.host + "/app/v3/user/bind"
         self.bind_parm = {

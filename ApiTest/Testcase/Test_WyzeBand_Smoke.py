@@ -63,7 +63,7 @@ from ApiTest.Common.Module import Moudle
 
 
 @allure.feature('wyzeband接口业务流程')
-@allure.description('验证不同场景解除绑定手环')
+@allure.description('验证绑定解绑功能闭环')
 class TestClass:
     def setup(self):
         print("Test Start")

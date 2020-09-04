@@ -47,10 +47,17 @@ class Moudle(object):
         self.headers = self.Returndata[1]
         self.headers['firmware_ver'] = firmware_ver                                                                   #生成token值之后'firmware_ver'字段获取设备的'version'值
 
-    @allure.step("获取设备Token成功")
+    @allure.step("获取设备Token成功（不传参）")
     def get_token(self):
         self.get_token_url = self.host + "/app/v2/wristband/get_token"
         self.get_token_parm = {"tz": "Asia/Shanghai"}
+        rdict = Request().post_wirst_request(method="post", url=self.get_token_url, data=self.get_token_parm, header=self.headers)
+        Assertions().assert_code(rdict['status_code'], 200)
+
+    @allure.step("获取设备Token成功（传参）")
+    def get_token_data(self):
+        self.get_token_url = self.host + "/app/v2/wristband/get_token"
+        self.get_token_parm = {"tz": "Asia/Shanghai",  "did": "RY.HP1.418337"}
         rdict = Request().post_wirst_request(method="post", url=self.get_token_url, data=self.get_token_parm, header=self.headers)
         Assertions().assert_code(rdict['status_code'], 200)
 
@@ -188,12 +195,18 @@ class Moudle(object):
         r = Request().get_wirst_request(method="get", url=self.get_band_bg_list_url, data=self.get_band_bg_list_parm, header=self.headers)
         Assertions().assert_code(r['status_code'], 200)
 
-    # @allure.step("上传手环背景图成功")
-    # def upload_band_bg(self):
-    #     self.upload_band_bg_url = self.host + "/app/v2/wristband/upload_band_bg"
-    #     self.upload_band_bg_parm = {}
-    #     r = Request().post_wirst_request(method="post", url=self.upload_band_bg_url, data=self.upload_band_bg_parm, header=self.headers)
-    #     Assertions().assert_code(r['status_code'], 200)
+    @allure.step("上传手环背景图成功")
+    def upload_band_bg(self):
+        new_headers = self.headers.copy()
+        new_headers['Content-Type'] = 'multipart/form-data; boundary=abbe3833-66e4-4845-a44d-5c9bbeb27c6f'
+        self.upload_band_bg_url = self.host + "/app/v2/wristband/upload_band_bg"
+        file_path = 'C://Users//EDZ//PycharmProjects//untitled//ApiTest//Testdata//space_flight.png'
+        self.upload_band_bg_parm = {'pic_id': (None, 'o_7'),
+                                    'file_path': ('space_flight.png', open(file_path, 'rb'), 'image/png')
+                                    }
+        r = Request().post_wirst_request(method="post", url=self.upload_band_bg_url, data=self.upload_band_bg_parm, header=new_headers)
+        Assertions().assert_code(r['status_code'], 200)
+
     @allure.step("用户打点数据上报成功")
     def upload_taglog(self):
         self.upload_taglog_url = self.host + "/app/v3/upload/taglog"
@@ -217,8 +230,10 @@ class Moudle(object):
 
 
 
-# if __name__ == '__main__':
-#     A = Moudle().bind_device()
-#     print(A)
+if __name__ == '__main__':
+    A = Moudle("Wristband_Alpha")
+    A.bind()
+    A.upload_band_bg()
+
 
 

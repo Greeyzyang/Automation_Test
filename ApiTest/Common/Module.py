@@ -37,6 +37,7 @@ class Moudle(object):
         father_path = os.path.abspath(os.path.dirname(current_path) + os.path.sep + "..")      # 获取当前文件的祖父目录
         config_path = father_path + "\\" + "Config\Config.ini"
         config_path = config_path.replace("\\", "/")
+        self.file_path = father_path + "\\" + "Testdata\\space_flight.png"
         self.config = ReadConfig(config_path)
         self.log = MyLog()
         # env2 = "Wristband_Alpha"
@@ -200,9 +201,9 @@ class Moudle(object):
         new_headers = self.headers.copy()
         new_headers['Content-Type'] = 'multipart/form-data; boundary=abbe3833-66e4-4845-a44d-5c9bbeb27c6f'
         self.upload_band_bg_url = self.host + "/app/v2/wristband/upload_band_bg"
-        file_path = 'C://Users//EDZ//PycharmProjects//untitled//ApiTest//Testdata//space_flight.png'
+        # file_path = 'C://Users//EDZ//PycharmProjects//untitled//ApiTest//Testdata//space_flight.png'
         self.upload_band_bg_parm = {'pic_id': (None, 'o_7'),
-                                    'file_path': ('space_flight.png', open(file_path, 'rb'), 'image/png')
+                                    'file_path': ('space_flight.png', open(self.file_path, 'rb'), 'image/png')
                                     }
         r = Request().post_wirst_request(method="post", url=self.upload_band_bg_url, data=self.upload_band_bg_parm, header=new_headers)
         Assertions().assert_code(r['status_code'], 200)

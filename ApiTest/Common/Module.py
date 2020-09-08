@@ -40,13 +40,11 @@ class Moudle(object):
         self.file_path = father_path + "\\" + "Testdata\\space_flight.png"
         self.config = ReadConfig(config_path)
         self.log = MyLog()
-        # env2 = "Wristband_Alpha"
-        self.host = self.config.get_value(env2, "host")
-        firmware_ver = self.config.get_value(env2, "firmware_ver")
+        self.host = self.config.get_value(env2, "host").encode('utf-8')
+        firmware_ver = self.config.get_value(env2, "firmware_ver").encode('utf-8')                                   #生成token值之后'firmware_ver'字段获取设备的'version'值
         self.Returndata = Session().get_wristband_session(env2)
-        # self.method = "post"
         self.headers = self.Returndata[1]
-        self.headers['firmware_ver'] = firmware_ver                                                                   #生成token值之后'firmware_ver'字段获取设备的'version'值
+        self.headers['firmware_ver'] = firmware_ver
 
     @allure.step("获取设备Token成功（不传参）")
     def get_token(self):
@@ -234,7 +232,7 @@ class Moudle(object):
 if __name__ == '__main__':
     A = Moudle("Wristband_Alpha")
     A.bind()
-    A.upload_band_bg()
+
 
 
 

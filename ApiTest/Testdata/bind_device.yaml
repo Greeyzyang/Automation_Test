@@ -9,7 +9,7 @@ bind_device:
       mac: 2C:AA:8E:00:AB:95
       nonce: 81461570
       sn: 202
-      sign: AAAAAAAAAAAAAAAAAAAAABAKZtfz8dJ2Wfz+08kLLGpzmH\/SncS+UQ+jGNRaMlzH
+      sign: AAAAAAAAAAAAAAAAAAAAAJemS1kss+AgcguKwa1M51aWLi9xnWNAKOeX7rCTosjR
       sign_version: 2
       model: RY.HP1
     expect:
@@ -22,4 +22,22 @@ bind_device:
   #    total: 0
       respones_time: 3
 
-  - case_name: 传入异常的参数，绑定手环失败
+  - case_name: tz字段传入为空，绑定手环失败
+    method: post
+    url: /app/v3/user/bind
+    parm :
+      tz:
+      did: RY.HP1.418337
+      mac: 2C:AA:8E:00:AB:95
+      nonce: 81461570
+      sn: 202
+      sign: AAAAAAAAAAAAAAAAAAAAAJemS1kss+AgcguKwa1M51aWLi9xnWNAKOeX7rCTosjR
+      sign_version: 2
+      model: RY.HP1
+    expect:
+      status_code: 200
+      code: 1
+      message : OK
+      data:
+        rst: true
+      respones_time: 3

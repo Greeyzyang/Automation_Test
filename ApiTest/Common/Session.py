@@ -152,17 +152,17 @@ class Session(object):
         }
 
         if env2 == "Wristband_Alpha":
-            login_host = self.config.get_value("Wristband_Alpha", "host")
-            login_url = self.config.get_value("Wristband_Alpha", "url")
-            phoneid = self.config.get_value("General_variable", "phone_id")
-            appinfo = self.config.get_value("Wristband_Alpha", "appinfo")
-            apikey = self.config.get_value("Wristband_Alpha", "apikey")
-            model = self.config.get_value("Wristband_Alpha", "model")
-            tz = self.config.get_value("Wristband_Alpha", "tz")
+            login_host = self.config.get_value("Wristband_Alpha", "host").encode('utf-8')
+            login_url = self.config.get_value("Wristband_Alpha", "url").encode('utf-8')
+            phoneid = self.config.get_value("General_variable", "phone_id").encode('utf-8')
+            appinfo = self.config.get_value("Wristband_Alpha", "appinfo").encode('utf-8')
+            apikey = self.config.get_value("Wristband_Alpha", "apikey").encode('utf-8')
+            model = self.config.get_value("Wristband_Alpha", "model").encode('utf-8')
+            tz = self.config.get_value("Wristband_Alpha", "tz").encode('utf-8')
             #firmware_ver = self.config.get_value("Wristband_Alpha", "firmware_ver")
             parm = {"tz": "Asia/Shanghai"}
             wristband_header = {}
-            wristband_header['access_token'] = Session().get_platfolm_session("Platfolm_Alpha")
+            wristband_header['access_token'] = Session().get_platfolm_session("Platfolm_Alpha").encode('utf-8')
             wristband_header['phoneid'] = phoneid
             wristband_header['appinfo'] = appinfo
             wristband_header['requestid'] = hashlib.md5(str(time.clock()).encode('utf-8')).hexdigest()              #模拟唯一的request id
@@ -170,10 +170,10 @@ class Session(object):
             wristband_header['model'] = model
             wristband_header['tz'] = tz
             wristband_header['firmware_ver'] = ''                                                                    #生成token值之前'firmware_ver'字段为空
-            login_host = login_host.encode('utf-8')
-            login_url = login_url.encode('utf-8')
+            # login_host = login_host.encode('utf-8')
+            # login_url = login_url.encode('utf-8')
             new_url = login_host + login_url
-            # wristband_header = json.dumps(wristband_header)
+            #wristband_header = json.dumps(wristband_header)
             new_header = dict(wristband_header, **headers)                                                             #合并2个字典组成一个新的header
             session_wristband_alpha = requests.session()
             session_wristband_alpha.mount(login_host, DESAdapter())                                                    #解决出现ssl.c661的问题
@@ -185,13 +185,12 @@ class Session(object):
             return r['data']['rst'], new_header
 
         elif env2 == "Wristband_Beta":
-            login_host = self.config.get_value("Wristband_Beta", "host")
-            login_url = self.config.get_value("Wristband_Beta", "url")
-            phoneid = self.config.get_value("General_variable", "phone_id")
-            appinfo = self.config.get_value("Wristband_Beta", "appinfo")
-            apikey = self.config.get_value("Wristband_Beta", "apikey")
-            apikey = self.config.get_value("Wristband_Beta", "apikey")
-            model = self.config.get_value("Wristband_Beta", "model")
+            login_host = self.config.get_value("Wristband_Beta", "host").encode('utf-8')
+            login_url = self.config.get_value("Wristband_Beta", "url").encode('utf-8')
+            phoneid = self.config.get_value("General_variable", "phone_id").encode('utf-8')
+            appinfo = self.config.get_value("Wristband_Beta", "appinfo").encode('utf-8')
+            apikey = self.config.get_value("Wristband_Beta", "apikey").encode('utf-8')
+            model = self.config.get_value("Wristband_Beta", "model").encode('utf-8')
             tz = self.config.get_value("Wristband_Beta", "tz")
             #firmware_ver = self.config.get_value("Wristband_Beta", "firmware_ver")
             parm = {"tz": "Asia/Shanghai"}
@@ -205,10 +204,10 @@ class Session(object):
             wristband_header['model'] = model
             wristband_header['tz'] = tz
             wristband_header['firmware_ver'] = ''
-            login_host = login_host.encode('utf-8')
-            login_url = login_url.encode('utf-8')
+            # login_host = login_host.encode('utf-8')
+            # login_url = login_url.encode('utf-8')
             new_url = login_host + login_url
-            # wristband_header = json.dumps(wristband_header)
+            #wristband_header = json.dumps(wristband_header)
             new_header = dict(wristband_header, **headers)                                                             #合并2个字典组成一个新的header
             session_wristband_beta = requests.session()
             session_wristband_beta.mount(login_host, DESAdapter())

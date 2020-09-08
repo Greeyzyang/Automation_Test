@@ -19,7 +19,8 @@
 
 import pytest
 import os
-import sys
+import json
+import ast
 import allure
 from ApiTest.Common.Config import ReadConfig
 from ApiTest.Common.Readyaml import Yamlc
@@ -41,19 +42,25 @@ class TestClass(object):
     def setup(self):
         print("Test Start***********************")
         self.config = ReadConfig(config_path)
-        self.login_host = self.config.get_value("Wristband_Alpha", "host")                                          #config文件获取host
-        self.login_host = self.login_host.encode('utf-8')
+        self.login_host = self.config.get_value("Wristband_Alpha", "host").encode('utf-8')                         #config文件获取host
+        firmware_ver = self.config.get_value("Wristband_Alpha", "firmware_ver").encode('utf-8')
         self.yaml = Yamlc(yaml_path).get_yaml_data(1, "bind_device")
         self.method = Yamlc(yaml_path).get_yaml_data(1, "bind_device", "method")
         self.url = Yamlc(yaml_path).get_yaml_data(1, "bind_device", "url")
         self.parm = Yamlc(yaml_path).get_yaml_data(1, "bind_device", "parm")
         self.expect = Yamlc(yaml_path).get_yaml_data(1, "bind_device", "expect")                                    #yaml文件获取传入参数
-        self.env2 = "Wristband_Alpha"
-        Returndata = Session().get_wristband_session(self.env2)
+        self.parm2 = Yamlc(yaml_path).get_yaml_data(2, "bind_device", "parm")
+        self.expect2 = Yamlc(yaml_path).get_yaml_data(2, "bind_device", "expect")
+        # self.parm3 = Yamlc(yaml_path).get_yaml_data(3, "bind_device", "parm")
+        # self.expect3 = Yamlc(yaml_path).get_yaml_data(3, "bind_device", "expect")
+        env2 = "Wristband_Alpha"
+        Returndata = Session().get_wristband_session(env2)
         self.wirst_cookies = Returndata[0]                                        #获取wrist端的cookies
         self.headers = Returndata[1]                                              #获取wrist端的headers
+        self.headers['firmware_ver'] = firmware_ver
         self.url = self.login_host + self.url
         self.parm['device_token'] = self.wirst_cookies
+        # self.parm = json.dumps(self.parm)
         self.log = MyLog()
         self.log.debug(u'初始化测试数据')
 
@@ -64,7 +71,6 @@ class TestClass(object):
     @allure.story(case_name)
     @allure.severity('blocker')
     def test_bind_device001(self):
-
         r = Request().post_wirst_request(self.method, self.url, self.parm, header=self.headers)
         print(r)
         Assertions().assert_code(r['code'], self.expect['code'])
@@ -73,8 +79,19 @@ class TestClass(object):
         Assertions().assert_code(r['message'], self.expect['message'])
         Assertions().assert_code(r['data']['rst'], self.expect['data']['rst'])
 
-# if __name__ == '__main__':
-#      pytest.main()
-     # pytest.main(['Test_Bind_Device.py', '-s', "--alluredir=./Report/XML"])
+    # case_name = Yamlc(yaml_path).get_yaml_data(2, "bind_device", "case_name").encode('utf-8')
+    # @allure.story(case_name)
+    # @allure.severity('blocker')
+    # def test_bind_device002(self):
+    #     r = Request().post_wirst_request(self.method, self.url, self.parm2, header=self.headers)
+    #     print(r)
+    #     Assertions().assert_code(r['code'], self.expect['code'])
+    #     Assertions().assert_code(r['status_code'], self.expect2['status_code'])
+    #     Assertions().assert_time(r['time_total'], self.expect2['respones_time'])
+    #     Assertions().assert_code(r['message'], self.expect2['message'])
+    #     Assertions().assert_code(r['data']['rst'], self.expect2['data']['rst'])
+if __name__ == '__main__':
+    pytest.main()
+     #pytest.main(['Test_Bind_Device.py', '-s', "--alluredir=./Report/XML"])
      # os.system('pytest -s -q --alluredir C:/Users/EDZ/PycharmProjects/untitled/ApiTest/Report/XML')
      # os.system('allure generate C:/Users/EDZ/PycharmProjects/untitled/ApiTest/Report/XML -o C:/Users/EDZ/PycharmProjects/untitled/ApiTest/Report/HTML --clean')

@@ -18,7 +18,7 @@ class Yamlc(object):
         self.log = Log.MyLog()
         self.file_path = filepath
         f = open(self.file_path, 'r')
-        self.yaml = yaml.load(f, Loader=yaml.FullLoader)
+        self.yaml = yaml.load(f.read(), Loader=yaml.FullLoader)
     # 获取配置文件路径
     def get_yaml_file(self):
         """

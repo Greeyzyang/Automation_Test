@@ -21,7 +21,7 @@ class Assertions(object):
         :return:
         """
         try:
-            assert str(code)== str(expected_code)
+            assert str(code) == str(expected_code)
             return True
         except:
             self.log.error(u'response状态码验证失败，预期结果为%s,实际结果为%s' %(expected_code, code))
@@ -83,7 +83,7 @@ class Assertions(object):
             assert str(time) < str(expected_time)
             return True
         except:
-            self.log.debug(u'response时间大于预期响应时间，实际响应时间为%s，预期响应时间为%s,建议优化' % (expected_time, time))
+            self.log.warning(u'response时间大于预期响应时间，实际响应时间为%s，预期响应时间为%s,建议优化' % (expected_time, time))
             raise
 
 

@@ -79,7 +79,7 @@ class Moudle(object):
             "sn": 144,
             "sign": "AAAAAAAAAAAAAAAAAAAAAJemS1kss+AgcguKwa1M51aWLi9xnWNAKOeX7rCTosjR",
             "sign_version": 2,
-            "device_token": self.Returndata[0],
+            "evice_token": self.Returndata[0],
             "model": "RY.HP1"
         }
         r = Request().post_wirst_request(method="post", url=self.bind_url, data=self.bind_parm, header=self.headers)

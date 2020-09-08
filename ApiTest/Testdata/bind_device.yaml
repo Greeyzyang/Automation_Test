@@ -7,8 +7,8 @@ bind_device:
       tz: Asia/Shanghai
       did: RY.HP1.418337
       mac: 2C:AA:8E:00:AB:95
-      nonce: 81461570
-      sn: 202
+      nonce: 141361162
+      sn: 144
       sign: AAAAAAAAAAAAAAAAAAAAAJemS1kss+AgcguKwa1M51aWLi9xnWNAKOeX7rCTosjR
       sign_version: 2
       model: RY.HP1

@@ -52,7 +52,10 @@ class TestClass:
         self.url = Yamlc(yaml_path).get_yaml_data(1, "unbind_device", "url")
         self.parm = Yamlc(yaml_path).get_yaml_data(1, "unbind_device", "parm")
         self.expect = Yamlc(yaml_path).get_yaml_data(1, "unbind_device", "expect")                                  #yaml文件获取传入参数
-
+        self.parm2 = Yamlc(yaml_path).get_yaml_data(2, "unbind_device", "parm")
+        self.expect2 = Yamlc(yaml_path).get_yaml_data(2, "unbind_device", "expect")
+        self.parm3 = Yamlc(yaml_path).get_yaml_data(3, "unbind_device", "parm")
+        self.expect3 = Yamlc(yaml_path).get_yaml_data(3, "unbind_device", "expect")
         self.url = self.login_host + self.url
         self.log = MyLog()
         self.log.debug(u'初始化测试数据')
@@ -75,5 +78,30 @@ class TestClass:
         Assertions().assert_code(r['message'], self.expect['message'])
         Assertions().assert_code(r['data']['rst'], self.expect['data']['rst'])
 
+
+    case_name = Yamlc(yaml_path).get_yaml_data(2, "unbind_device", "case_name")
+    @allure.story(case_name)
+    @allure.severity('blocker')
+    def test_unbind_device002(self):
+        Returndata = Moudle("Wristband_Alpha").bind()
+        self.parm2['device_token'] = Returndata[0]
+        self.headers = Returndata[1]
+        r = Request().post_wirst_request(method=self.method, url=self.url, data=self.parm2, header=self.headers)
+        print(r)
+        Assertions().assert_code(r['code'], self.expect2['code'])
+        Assertions().assert_code(r['status_code'], self.expect2['status_code'])
+
+    case_name = Yamlc(yaml_path).get_yaml_data(3, "unbind_device", "case_name")
+    @allure.story(case_name)
+    @allure.severity('blocker')
+    def test_unbind_device002(self):
+        Returndata = Moudle("Wristband_Alpha").bind()
+        #
+        self.parm3['device_token'] = Returndata[0] + 'Greey'
+        self.headers = Returndata[1]
+        r = Request().post_wirst_request(method=self.method, url=self.url, data=self.parm3, header=self.headers)
+        print(r)
+        Assertions().assert_code(r['code'], self.expect3['code'])
+        Assertions().assert_code(r['status_code'], self.expect3['status_code'])
 if __name__ == '__main__':
      pytest.main()

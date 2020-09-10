@@ -3,7 +3,7 @@ bind_device:
     method: post
     url: /app/v3/user/bind
 #    url: /app/v2/wristband/bind_device
-    parm :
+    parm:
       tz: Asia/Shanghai
       did: RY.HP1.418337
       mac: 2C:AA:8E:00:AB:95
@@ -22,22 +22,116 @@ bind_device:
   #    total: 0
       respones_time: 3
 
-  - case_name: tz字段传入为空，绑定手环失败
+  - case_name: 请求头firmware_ver字段传入为空，绑定手环失败
     method: post
     url: /app/v3/user/bind
-    parm :
-      tz:
+    parm:
+      tz: Asia/Shanghai
       did: RY.HP1.418337
       mac: 2C:AA:8E:00:AB:95
-      nonce: 81461570
-      sn: 202
+      nonce: 141361162
+      sn: 144
+      sign: AAAAAAAAAAAAAAAAAAAAAJemS1kss+AgcguKwa1M51aWLi9xnWNAKOeX7rCTosjR
+      sign_version: 2
+      model: RY.HP
+    expect:
+      status_code: 400
+      code: 1001
+
+  - case_name: 传入失效的access_token值，绑定手环失败(模拟未登录的情况下进行绑定-业务逻辑)
+    method: post
+    url: /app/v3/user/bind
+    parm:
+      tz: Asia/Shanghai
+      did: RY.HP1.418337
+      mac: 2C:AA:8E:00:AB:95
+      nonce: 141361162
+      sn: 144
       sign: AAAAAAAAAAAAAAAAAAAAAJemS1kss+AgcguKwa1M51aWLi9xnWNAKOeX7rCTosjR
       sign_version: 2
       model: RY.HP1
     expect:
       status_code: 200
-      code: 1
-      message : OK
-      data:
-        rst: true
-      respones_time: 3
+      code: 2001
+
+  - case_name: 传入失效的签名sign，绑定手环失败（安全性）
+    method: post
+    url: /app/v3/user/bind
+    parm:
+      tz: Asia/Shanghai
+      did: RY.HP1.418337
+      mac: 2C:AA:8E:00:AB:95
+      nonce: 133333333
+      sn: 202
+      sign: AAAAAAAAAAAAAAAAAAAAAJemS1kss+AgcguKwa1M51aWLi9xnWNAKOeX7rCTosjR
+      sign_version: 2
+      model: RY.HP
+    expect:
+      status_code: 403
+      code: 2102
+
+  - case_name: 传入不存在的did字段，绑定手环失败（模拟一个虚拟的设备绑定-业务逻辑）
+    method: post
+    url: /app/v3/user/bind
+    parm:
+      tz: Asia/Shanghai
+      did: RY.HP1.000000
+      mac: 2C:AA:8E:00:AB:95
+      nonce: 141361162
+      sn: 144
+      sign: AAAAAAAAAAAAAAAAAAAAAJemS1kss+AgcguKwa1M51aWLi9xnWNAKOeX7rCTosjR
+      sign_version: 2
+      model: RY.HP1
+    expect:
+      status_code: 200
+      code: 1009
+
+#  - case_name: 传入失效的'device_token'，绑定手环失败（未生成token直接去绑定手环）
+#    method: post
+#    url: /app/v3/user/bind
+#    parm:
+#      tz: Asia/Shanghai
+#      did: RY.HP1.418337
+#      mac: 2C:AA:8E:00:AB:95
+#      nonce: 141361162
+#      sn: 144
+#      sign: AAAAAAAAAAAAAAAAAAAAAJemS1kss+AgcguKwa1M51aWLi9xnWNAKOeX7rCTosjR
+#      sign_version: 2
+#      model: RY.HP1
+#    expect:
+#      status_code: 403
+#      code: 1006
+
+
+#  - case_name: 传入的did字符类型不是str，绑定手环失败(传入参数字符类型校验)
+#    method: post
+#    url: /app/v3/user/bind
+#    parm:
+#      tz: Asia/Shanghai
+#      did: [RY.HP1.418337]
+#      mac: 2C:AA:8E:00:AB:95
+#      nonce: 141361162
+#      sn: 144
+#      sign: AAAAAAAAAAAAAAAAAAAAAJemS1kss+AgcguKwa1M51aWLi9xnWNAKOeX7rCTosjR
+#      sign_version: 2
+#      model: RY.HP1
+#    expect:
+#      status_code: 200
+#      code: 1009
+
+#  - case_name: 传入不存在的mac字段，绑定手环失败（传入参数有效性校验）
+#    method: post
+#    url: /app/v3/user/bind
+#    parm :
+#      tz: Asia/Shanghai
+#      did: RY.HP1.418337
+#      mac: 00:00:00:00:00:00
+#      nonce: 141361162
+#      sn: 144
+#      sign: AAAAAAAAAAAAAAAAAAAAAJemS1kss+AgcguKwa1M51aWLi9xnWNAKOeX7rCTosjR
+#      sign_version: 2
+#      model: RY.HP1
+#    expect:
+#      status_code: 200
+#      code: 1009
+

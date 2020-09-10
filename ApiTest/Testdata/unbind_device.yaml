@@ -15,3 +15,23 @@ unbind_device:
     #   current: 0
     #   total: 0
       respones_time: 3
+
+  - case_name: 传入did字段为RY.HP1.000000，解除绑定手环失败（模拟设备不存在）
+    method: post
+    url: /app/v3/user/unbind
+    parm:
+      tz: Asia/Shanghai
+      did: RY.HP1.000000
+    expect:
+      status_code: 200
+      code: 2101
+
+#  - case_name: 传入失效的'device_token'，解除绑定手环失败（未绑定解绑手环）
+#    method: post
+#    url: /app/v3/user/unbind
+#    parm:
+#      tz: Asia/Shanghai
+#      did: RY.HP1.418337
+#    expect:
+#      status_code: 403
+#      code: 1006

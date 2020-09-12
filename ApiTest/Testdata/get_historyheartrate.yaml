@@ -1,0 +1,20 @@
+#get_historyheartrate:
+#  - case_name: 传入date字段格式为2020-13-09，获取历史心率记录失败
+#    method: post
+#    url: /app/v2/wristband/get_heart_rate_history
+#    parm:
+#      tz: Asia/Shanghai
+#      date: '2020-13-09'
+#    expect:
+#      status_code: 400
+#      code: 1003
+
+#  - case_name: 传入date字段格式为2020-12-12，获取历史心率记录失败
+#    method: post
+#    url: /app/v2/wristband/get_heart_rate_history
+#    parm:
+#      tz: Asia/Shanghai
+#      date: 2020-12-12
+#    expect:
+#      status_code: 400
+#      code: 1003

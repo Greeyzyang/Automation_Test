@@ -103,21 +103,21 @@ bind_device:
 #      code: 1006
 
 
-#  - case_name: 传入的did字符类型不是str，绑定手环失败(传入参数字符类型校验)
-#    method: post
-#    url: /app/v3/user/bind
-#    parm:
-#      tz: Asia/Shanghai
-#      did: [RY.HP1.418337]
-#      mac: 2C:AA:8E:00:AB:95
-#      nonce: 141361162
-#      sn: 144
-#      sign: AAAAAAAAAAAAAAAAAAAAAJemS1kss+AgcguKwa1M51aWLi9xnWNAKOeX7rCTosjR
-#      sign_version: 2
-#      model: RY.HP1
-#    expect:
-#      status_code: 200
-#      code: 1009
+  - case_name: 传入的sn字符类型是str，绑定手环失败(传入参数字符类型校验)
+    method: post
+    url: /app/v3/user/bind
+    parm:
+      tz: Asia/Shanghai
+      did: RY.HP1.418337
+      mac: 2C:AA:8E:00:AB:95
+      nonce: 141361162
+      sn: '144'
+      sign: AAAAAAAAAAAAAAAAAAAAAJemS1kss+AgcguKwa1M51aWLi9xnWNAKOeX7rCTosjR
+      sign_version: 2
+      model: RY.HP1
+    expect:
+      status_code: 200
+      code: 1009
 
 #  - case_name: 传入不存在的mac字段，绑定手环失败（传入参数有效性校验）
 #    method: post

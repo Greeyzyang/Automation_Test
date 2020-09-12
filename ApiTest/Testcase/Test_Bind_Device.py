@@ -89,28 +89,38 @@ class TestClass(object):
     case_name = Yamlc(yaml_path).get_yaml_data(2, "bind_device", "case_name").encode('utf-8')
     @allure.story(case_name)
     @allure.severity('blocker')
+    def test_bind_device002(self):
+        self.parm2['device_token'] = self.wirst_cookies
+        headers = self.headers.copy()
+        headers['firmware_ver'] = ''
+        r = Request().post_wirst_request(self.method, self.url, self.parm2, header=headers)
+        print(r)
+        Assertions().assert_code(r['code'], self.expect2['code'])
+        Assertions().assert_code(r['status_code'], self.expect2['status_code'])
+
+    case_name = Yamlc(yaml_path).get_yaml_data(3, "bind_device", "case_name").encode('utf-8')
+    @allure.story(case_name)
+    @allure.severity('blocker')
     def test_bind_device003(self):
         self.parm3['device_token'] = self.wirst_cookies
         headers = self.headers.copy()
-        headers['firmware_ver'] = ''
+        headers['access_token'] = 'AAAAAAAAAAAAAAAA'
         r = Request().post_wirst_request(self.method, self.url, self.parm3, header=headers)
         print(r)
         Assertions().assert_code(r['code'], self.expect3['code'])
         Assertions().assert_code(r['status_code'], self.expect3['status_code'])
 
-    case_name = Yamlc(yaml_path).get_yaml_data(3, "bind_device", "case_name").encode('utf-8')
+    case_name = Yamlc(yaml_path).get_yaml_data(4, "bind_device", "case_name").encode('utf-8')
     @allure.story(case_name)
     @allure.severity('blocker')
     def test_bind_device004(self):
         self.parm4['device_token'] = self.wirst_cookies
-        headers = self.headers.copy()
-        headers['access_token'] = 'AAAAAAAAAAAAAAAA'
-        r = Request().post_wirst_request(self.method, self.url, self.parm4, header=headers)
+        r = Request().post_wirst_request(self.method, self.url, self.parm4, header=self.headers)
         print(r)
         Assertions().assert_code(r['code'], self.expect4['code'])
         Assertions().assert_code(r['status_code'], self.expect4['status_code'])
 
-    case_name = Yamlc(yaml_path).get_yaml_data(4, "bind_device", "case_name").encode('utf-8')
+    case_name = Yamlc(yaml_path).get_yaml_data(5, "bind_device", "case_name").encode('utf-8')
     @allure.story(case_name)
     @allure.severity('blocker')
     def test_bind_device005(self):
@@ -120,27 +130,17 @@ class TestClass(object):
         Assertions().assert_code(r['code'], self.expect5['code'])
         Assertions().assert_code(r['status_code'], self.expect5['status_code'])
 
-    case_name = Yamlc(yaml_path).get_yaml_data(5, "bind_device", "case_name").encode('utf-8')
+    case_name = Yamlc(yaml_path).get_yaml_data(6, "bind_device", "case_name").encode('utf-8')
     @allure.story(case_name)
     @allure.severity('blocker')
     def test_bind_device006(self):
-        self.parm6['device_token'] = self.wirst_cookies
+        self.parm6['device_token'] = self.wirst_cookies + 'Greey'
         r = Request().post_wirst_request(self.method, self.url, self.parm6, header=self.headers)
         print(r)
         Assertions().assert_code(r['code'], self.expect6['code'])
         Assertions().assert_code(r['status_code'], self.expect6['status_code'])
-
-    # case_name = Yamlc(yaml_path).get_yaml_data(2, "bind_device", "case_name").encode('utf-8')
-    # @allure.story(case_name)
-    # @allure.severity('blocker')
-    # def test_bind_device002(self):
-    #     self.parm2['device_token'] = self.wirst_cookies + 'Greey'
-    #     r = Request().post_wirst_request(self.method, self.url, self.parm2, header=self.headers)
-    #     print(r)
-    #     Assertions().assert_code(r['code'], self.expect2['code'])
-    #     Assertions().assert_code(r['status_code'], self.expect2['status_code'])
 if __name__ == '__main__':
-    pytest.main("-v -s Test_Bind_Device.py::TestClass()::test_bind_device002")
+    pytest.main("-v -s Test_Bind_Device.py::TestClass()::test_bind_device006")
     #pytest.main()
      #pytest.main(['Test_Bind_Device.py', '-s', "--alluredir=./Report/XML"])
      # os.system('pytest -s -q --alluredir C:/Users/EDZ/PycharmProjects/untitled/ApiTest/Report/XML')

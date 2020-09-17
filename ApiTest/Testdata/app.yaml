@@ -1,0 +1,26 @@
+#设计帽
+Model:
+  - DRA-AL00:                                                              # OPPO测试机
+    desired_caps:
+      platformName: Android                                                # 使用哪个移动操作系统平台
+      deviceName: HDP9K19128907088                                                  # 使用的移动设备或模拟器的种类
+      #deviceName: 192.168.1.173:5555
+      platformVersion: 8.1.0                                                  # 移动操作系统版本
+      noReset: False                                                      # 是否重新安装app
+#      app:                                                                 # app安装路径
+#      unicodeKeyboard: True                                              # 启用Unicode输入
+#      resetKeyboard: False                                               # 使用unicodeKeyboard功能运行Unicode测试后，将键盘重置为原始状态。
+      appPackage: com.ryeex.sdk.demo                                      # 运行的Android应用程序的Java包
+      appActivity: com.ryeex.sdk.MainActivity                             # 要从包中启动的Android活动的活动名称
+      newCommandTimeout: 300                                             # 设置命令超时时间，单位：秒。达到超时时间仍未接收到新的命令时 Appium 会假设客户端退出然后自动结束会话。
+      #automationName : selendroid
+
+  - Setting:                                                   #启动设置程序
+    desired_caps:
+      platformName: Android
+      deviceName: HDP9K19128907088
+      platformVersion: 8.1.0
+      noReset: False
+      appPackage: com.android.settings
+      appActivity: Settings
+      newCommandTimeout: 300

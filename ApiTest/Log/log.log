@@ -1407,3 +1407,56 @@
 [DEBUG 2020-09-17 19:27:04]初始化测试数据
 [DEBUG 2020-09-17 19:31:29]初始化测试数据
 [DEBUG 2020-09-17 19:35:02]初始化测试数据
+[DEBUG 2020-09-17 20:22:31]初始化测试数据
+[DEBUG 2020-09-17 20:23:26]初始化测试数据
+[DEBUG 2020-09-17 20:26:14]初始化测试数据
+[DEBUG 2020-09-17 20:28:19]初始化测试数据
+[DEBUG 2020-09-17 20:31:22]初始化测试数据
+[DEBUG 2020-09-17 20:35:28]初始化测试数据
+[DEBUG 2020-09-17 20:36:02]初始化测试数据
+[DEBUG 2020-09-17 20:36:57]初始化测试数据
+[DEBUG 2020-09-17 20:37:46]初始化测试数据
+[DEBUG 2020-09-17 20:45:06]初始化测试数据
+[DEBUG 2020-09-17 20:46:02]初始化测试数据
+[DEBUG 2020-09-17 20:49:34]初始化测试数据
+[DEBUG 2020-09-17 20:52:48]初始化测试数据
+[DEBUG 2020-09-17 23:10:02]platfolm_cookies: lvtx.Ifh+R6hGRgz8neQUHMGVIid4VjNZWwPvSEHyv/UXpfacTn2btLUpRhvVybVbH5WxIjFLmNqM5V8Kw6VScwvh4DjcJpH6fTJHNMsb/hgMTeU877vibG7d8RPV92HKPNolnLnfDf4UZfwC06Eq874L5H+m/6EkoN8B81ahheBnTDoARPd3GHpd7TpYwPIVLXjpoBcSrg==
+[DEBUG 2020-09-17 23:10:04]wristband_cookies: 3DOm3YBTMuM7d7cd
+[DEBUG 2020-09-17 23:10:04]初始化测试数据
+[DEBUG 2020-09-17 23:10:19]respones没有字段
+[DEBUG 2020-09-18 09:53:51]初始化测试数据
+[DEBUG 2020-09-18 10:05:58]初始化测试数据
+[DEBUG 2020-09-18 10:11:37]初始化测试数据
+[DEBUG 2020-09-18 10:13:05]初始化测试数据
+[DEBUG 2020-09-18 10:20:40]初始化测试数据
+[DEBUG 2020-09-18 10:25:08]初始化测试数据
+[DEBUG 2020-09-18 10:33:12]初始化测试数据
+[DEBUG 2020-09-18 10:43:35]初始化测试数据
+[ERROR 2020-09-18 10:44:14]App页面Response验证失败//*[@class='android.widget.TextView' and @resource-id='com.ryeex.sdk.demo:id/tv_result']
+[DEBUG 2020-09-18 10:48:00]初始化测试数据
+[ERROR 2020-09-18 10:48:35]App页面Response验证失败//*[@class='android.widget.TextView' and @resource-id='com.ryeex.sdk.demo:id/tv_result']
+[DEBUG 2020-09-18 10:51:00]初始化测试数据
+[ERROR 2020-09-18 10:52:50]App页面Response验证失败//*[@class='android.widget.TextView' and @resource-id='com.ryeex.sdk.demo:id/tv_result']
+[DEBUG 2020-09-18 10:59:13]初始化测试数据
+[ERROR 2020-09-18 10:59:49]App页面Response验证失败BleError={code:5, bleCode:-1, message:device is not connected}
+[DEBUG 2020-09-18 11:00:36]初始化测试数据
+[ERROR 2020-09-18 11:01:14]App页面Response验证失败BleError={code:5, bleCode:-1, message:device is not connected}
+[DEBUG 2020-09-18 11:04:04]初始化测试数据
+[DEBUG 2020-09-18 11:13:51]初始化测试数据
+[ERROR 2020-09-18 11:15:16]App页面Response验证失败BleError={code:5, bleCode:-1, message:device is not connected}
+[DEBUG 2020-09-18 11:18:07]初始化测试数据
+[ERROR 2020-09-18 11:18:56]App页面Response验证失败BleError={code:5, bleCode:-1, message:device is not connected}
+[DEBUG 2020-09-18 11:19:50]初始化测试数据
+[DEBUG 2020-09-18 11:24:37]初始化测试数据
+[DEBUG 2020-09-18 11:26:27]初始化测试数据
+[DEBUG 2020-09-18 11:26:58]初始化测试数据
+[DEBUG 2020-09-18 11:36:09]初始化测试数据
+[DEBUG 2020-09-18 11:39:39]初始化测试数据
+[DEBUG 2020-09-18 11:43:21]初始化测试数据
+[DEBUG 2020-09-18 14:16:31]初始化测试数据
+[DEBUG 2020-09-18 14:21:51]初始化测试数据
+[DEBUG 2020-09-18 14:23:38]初始化测试数据
+[DEBUG 2020-09-18 14:25:12]初始化测试数据
+[DEBUG 2020-09-18 14:33:08]初始化测试数据
+[DEBUG 2020-09-18 14:34:59]初始化测试数据
+[DEBUG 2020-09-18 14:45:19]初始化测试数据

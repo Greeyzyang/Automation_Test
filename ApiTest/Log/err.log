@@ -115,3 +115,10 @@
 [ERROR 2020-09-11 18:10:48]读取配置文件参数不正确,请检查传参
 [ERROR 2020-09-15 17:48:14]读取配置文件参数不正确,请检查传参
 [ERROR 2020-09-15 23:11:39]post请求失败，请检查
+[ERROR 2020-09-18 10:44:14]App页面Response验证失败//*[@class='android.widget.TextView' and @resource-id='com.ryeex.sdk.demo:id/tv_result']
+[ERROR 2020-09-18 10:48:35]App页面Response验证失败//*[@class='android.widget.TextView' and @resource-id='com.ryeex.sdk.demo:id/tv_result']
+[ERROR 2020-09-18 10:52:50]App页面Response验证失败//*[@class='android.widget.TextView' and @resource-id='com.ryeex.sdk.demo:id/tv_result']
+[ERROR 2020-09-18 10:59:49]App页面Response验证失败BleError={code:5, bleCode:-1, message:device is not connected}
+[ERROR 2020-09-18 11:01:14]App页面Response验证失败BleError={code:5, bleCode:-1, message:device is not connected}
+[ERROR 2020-09-18 11:15:16]App页面Response验证失败BleError={code:5, bleCode:-1, message:device is not connected}
+[ERROR 2020-09-18 11:18:56]App页面Response验证失败BleError={code:5, bleCode:-1, message:device is not connected}

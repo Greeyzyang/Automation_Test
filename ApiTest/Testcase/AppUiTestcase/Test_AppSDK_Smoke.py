@@ -28,10 +28,9 @@ from ApiTest.Common.Log import MyLog
 from selenium.webdriver.common.by import By
 
 current_path = os.path.abspath(__file__)
-father_path = os.path.abspath(os.path.dirname(current_path) + os.path.sep + "..")
+father_path = os.path.abspath(os.path.dirname(current_path) + os.path.sep + "../..")                                  #获取上上级目录
 yaml_path = father_path + "\\" + "Testdata\\app.yaml"
 
-@pytest.mark.smoke
 @allure.feature('设备端业务流程')
 @allure.description('验证APP和Wyze交互场景')
 class TestClass:
@@ -50,19 +49,20 @@ class TestClass:
 
     @allure.story("设备端通过性验证")
     @allure.severity('blocker')
+    @pytest.mark.smoke
     def test_appwyze_smoke(self):
         self.driver = self.app.open_app()
         self.app.click_prompt_box()
         size = self.driver.get_window_size()                                                                           #获取屏幕尺寸
-        if self.app.object_exist("2C:AA:8E:00:AB:95") == False:
+        if self.app.object_exist("2C:AA:8E:01:01:92") == False:
             self.app.close_app()
             self.app_setting.restart_bluetooth()                                                                       #重启蓝牙
             self.app.open_app()
             self.app.click_prompt_box()
-            if self.app.object_exist("2C:AA:8E:00:AB:95") == False:
+            if self.app.object_exist("2C:AA:8E:01:01:92") == False:
                 self.driver.keyevent(4)                                                                                #模拟返回键
                 self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="解绑"]').click()
-        self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="2C:AA:8E:00:AB:95"]').click()
+        self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="2C:AA:8E:01:01:92"]').click()
         # self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="请在设备上点击确认"]')
         # self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="绑定成功"]')
 
@@ -70,7 +70,7 @@ class TestClass:
         self.app.find_elementby(By.XPATH, '//*[@class="android.widget.Button" and @text="完成"]').click()
         self.app.click_prompt_box()
         self.app.click_prompt_box()
-        self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="2C:AA:8E:00:AB:95  已连接"]')
+        self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="2C:AA:8E:01:01:92  已连接"]')
         self.app.tv_device_info()                                                                                      #设备信息
         self.app.tv_device_property()                                                                                  #设备电量
         self.app.tv_device_activity()                                                                                  #活动数据

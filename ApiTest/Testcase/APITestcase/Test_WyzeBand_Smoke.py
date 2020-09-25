@@ -63,7 +63,6 @@ from ApiTest.Common.Module import Moudle
 
 
 
-@pytest.mark.smoke
 @allure.feature('wyzeband接口业务流程')
 @allure.description('验证绑定解绑功能闭环')
 class TestClass:
@@ -78,6 +77,7 @@ class TestClass:
         print("Test End")
     @allure.story("wyzeband通过性验证")
     @allure.severity('blocker')
+    @pytest.mark.smoke
     def test_wyzeband_smoke(self):
         self.moudle.bind()                                      #绑定手环
         self.moudle.get_token()                                 #获取设备Token(不传参)

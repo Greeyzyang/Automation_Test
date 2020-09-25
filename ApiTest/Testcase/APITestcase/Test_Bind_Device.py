@@ -31,7 +31,7 @@ from ApiTest.Common.Session import Session
 
 
 current_path = os.path.abspath(__file__)
-father_path = os.path.abspath(os.path.dirname(current_path) + os.path.sep + "..")
+father_path = os.path.abspath(os.path.dirname(current_path) + os.path.sep + "../..")
 config_path = father_path + "\\" + "Config\Config.ini"
 yaml_path = father_path + "\\" + "Testdata\\bind_device.yaml"
 

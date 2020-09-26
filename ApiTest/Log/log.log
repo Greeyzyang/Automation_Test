@@ -1491,3 +1491,90 @@
 [DEBUG 2020-09-25 10:43:35]wristband_cookies: kOw6+cMtY+Uy9YWK
 [DEBUG 2020-09-25 10:43:35]初始化测试数据
 [DEBUG 2020-09-25 10:43:48]respones没有字段
+[DEBUG 2020-09-25 17:21:03]初始化测试数据
+[DEBUG 2020-09-25 17:21:56]初始化测试数据
+[DEBUG 2020-09-25 17:27:07]初始化测试数据
+[DEBUG 2020-09-25 17:31:01]初始化测试数据
+[DEBUG 2020-09-25 17:34:10]初始化测试数据
+[DEBUG 2020-09-25 19:20:20]初始化测试数据
+[DEBUG 2020-09-25 19:23:41]初始化测试数据
+[DEBUG 2020-09-25 19:27:15]初始化测试数据
+[ERROR 2020-09-25 19:29:27]xpath 未能找到 //android.widget.EditText[@text="login"] 元素
+[DEBUG 2020-09-25 19:38:40]初始化测试数据
+[DEBUG 2020-09-25 19:39:15]初始化测试数据
+[DEBUG 2020-09-25 19:41:48]初始化测试数据
+[DEBUG 2020-09-25 19:42:28]初始化测试数据
+[ERROR 2020-09-25 19:44:47]xpath 未能找到 //android.widget.EditText[@text="Wyze Band"] 元素
+[DEBUG 2020-09-25 19:49:02]初始化测试数据
+[DEBUG 2020-09-25 19:50:10]初始化测试数据
+[DEBUG 2020-09-25 19:58:13]初始化测试数据
+[DEBUG 2020-09-25 19:58:57]初始化测试数据
+[ERROR 2020-09-25 20:01:00]xpath 未能找到 //android.widget.EditText[@text="Enable Background Service"] 元素
+[ERROR 2020-09-25 20:01:10]xpath 未能找到 //android.widget.EditText[@text="Okay"] 元素
+[DEBUG 2020-09-25 20:04:25]初始化测试数据
+[ERROR 2020-09-25 20:06:29]xpath 未能找到 //android.widget.EditText[@text="Enable Background Service"] 元素
+[ERROR 2020-09-25 20:06:48]xpath 未能找到 //android.widget.EditText[@text="Device Information"] 元素
+[DEBUG 2020-09-25 20:13:05]初始化测试数据
+[DEBUG 2020-09-25 20:13:49]初始化测试数据
+[DEBUG 2020-09-25 20:18:06]初始化测试数据
+[ERROR 2020-09-25 20:20:09]xpath 未能找到 //android.widget.EditText[@text="Enable Background Service"] 元素
+[ERROR 2020-09-25 20:20:30]xpath 未能找到 //android.widget.EditText[@text="Firmware Update"] 元素
+[DEBUG 2020-09-25 20:23:54]初始化测试数据
+[ERROR 2020-09-25 20:25:56]xpath 未能找到 //android.widget.EditText[@text="Enable Background Service"] 元素
+[ERROR 2020-09-25 20:26:06]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[DEBUG 2020-09-25 20:28:39]初始化测试数据
+[ERROR 2020-09-25 20:30:39]xpath 未能找到 //android.widget.EditText[@text="Enable Background Service"] 元素
+[ERROR 2020-09-25 20:30:50]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[DEBUG 2020-09-25 20:34:05]初始化测试数据
+[DEBUG 2020-09-25 20:37:23]初始化测试数据
+[ERROR 2020-09-25 20:39:26]xpath 未能找到 //android.widget.EditText[@text="Enable Background Service"] 元素
+[DEBUG 2020-09-25 23:10:06]platfolm_cookies: lvtx.GkVm/Ov27twS/Efa5AgIWNPUjx1rL5xvnOhDdt+q+fvj7F4h5ovDEYR3MfXBqA2S8Yd4/4q2aDRFW98xkMRHGhbq9NlTeVw3ivTDIWQbAspA4XYTXWPRHrm//Rru9I/dtJaITzrC7RX9PTn7Epn49naR9t7hAbGhAR3chqsCr9g8ZtSx/UwtFb81T0fX4faMmJ4VTw==
+[DEBUG 2020-09-25 23:10:08]wristband_cookies: L3z4wZnEjh2W+Fhu
+[DEBUG 2020-09-25 23:10:08]初始化测试数据
+[ERROR 2020-09-25 23:10:16]post请求失败，请检查
+[DEBUG 2020-09-26 09:58:26]platfolm_cookies: lvtx.s7V493+HQe4JNn+IKLPXT7TUMjJ2KpUX0HqEDrE3aTG+p/BZR5OqXI8J2FG0akpE5DXS0J8mK+Ug2l1VKGwuJIvJRjFzY79j3QE5QBmthwP+U3BZOmeq8n4I4mkCS+0pHD4gul5bhNKiXmDC9aPAvhx21jztDToSUMV0ewV94jYTcpNuFWURshYXTHC50RsnDaFpIg==
+[DEBUG 2020-09-26 09:58:27]wristband_cookies: B7TA8UNNjhxBFTBg
+[DEBUG 2020-09-26 09:58:27]初始化测试数据
+[DEBUG 2020-09-26 09:58:39]respones没有字段
+[DEBUG 2020-09-26 11:14:41]初始化测试数据
+[ERROR 2020-09-26 11:16:43]xpath 未能找到 //*[@resource-id="com.hualai:id/wyze_main_item_nickname"] 元素
+[DEBUG 2020-09-26 11:17:30]初始化测试数据
+[ERROR 2020-09-26 11:19:27]xpath 未能找到 //*[@resource-id="com.hualai:id/wyze_main_item_nickname"] 元素
+[DEBUG 2020-09-26 11:20:59]初始化测试数据
+[ERROR 2020-09-26 11:22:59]xpath 未能找到 //android.widget.EditText[@text="Enable Background Service"] 元素
+[DEBUG 2020-09-26 14:13:46]初始化测试数据
+[DEBUG 2020-09-26 14:14:27]初始化测试数据
+[DEBUG 2020-09-26 14:17:17]初始化测试数据
+[ERROR 2020-09-26 14:19:22]xpath 未能找到 //android.widget.EditText[@text="Enable Background Service"] 元素
+[ERROR 2020-09-26 14:19:32]xpath 未能找到 //*[@resource-id="com.hualai:id/rl_more_device_data"] 元素
+[DEBUG 2020-09-26 14:22:57]初始化测试数据
+[ERROR 2020-09-26 14:24:58]xpath 未能找到 //android.widget.EditText[@text="Enable Background Service"] 元素
+[ERROR 2020-09-26 14:25:24]xpath 未能找到 //android.widget.EditText[@text="Please select the targeted version"] 元素
+[DEBUG 2020-09-26 14:29:26]初始化测试数据
+[DEBUG 2020-09-26 14:30:18]初始化测试数据
+[ERROR 2020-09-26 14:32:11]xpath 未能找到 //*[@resource-id="com.hualai:id/wyze_main_item_nickname"] 元素
+[DEBUG 2020-09-26 14:32:44]初始化测试数据
+[DEBUG 2020-09-26 14:33:20]初始化测试数据
+[ERROR 2020-09-26 14:35:33]xpath 未能找到 //android.widget.EditText[@text="Enable Background Service"] 元素
+[ERROR 2020-09-26 14:35:55]xpath 未能找到 //*[@resource-id="com.hualai:id/rl_more_device_data"] 元素
+[DEBUG 2020-09-26 14:38:03]初始化测试数据
+[DEBUG 2020-09-26 14:38:39]初始化测试数据
+[ERROR 2020-09-26 14:40:36]xpath 未能找到 //*[@resource-id="com.hualai:id/wyze_main_item_nickname"] 元素
+[DEBUG 2020-09-26 14:43:06]初始化测试数据
+[DEBUG 2020-09-26 14:43:43]初始化测试数据
+[ERROR 2020-09-26 14:45:50]xpath 未能找到 //android.widget.EditText[@text="Enable Background Service"] 元素
+[ERROR 2020-09-26 14:46:17]xpath 未能找到 //*[@resource-id="com.hualai:id/rl_more_device_data"] 元素
+[DEBUG 2020-09-26 14:48:01]初始化测试数据
+[ERROR 2020-09-26 14:50:07]xpath 未能找到 //android.widget.EditText[@text="Enable Background Service"] 元素
+[DEBUG 2020-09-26 14:56:55]初始化测试数据
+[ERROR 2020-09-26 14:59:02]xpath 未能找到 //android.widget.EditText[@text="Enable Background Service"] 元素
+[DEBUG 2020-09-26 15:32:37]初始化测试数据
+[DEBUG 2020-09-26 15:37:16]初始化测试数据
+[ERROR 2020-09-26 15:39:18]xpath 未能找到 //*[@resource-id="com.hualai:id/wyze_main_item_nickname"] 元素
+[DEBUG 2020-09-26 15:53:58]初始化测试数据
+[DEBUG 2020-09-26 19:11:48]初始化测试数据
+[DEBUG 2020-09-26 19:12:17]初始化测试数据
+[DEBUG 2020-09-26 19:16:46]初始化测试数据
+[DEBUG 2020-09-26 19:27:56]初始化测试数据
+[DEBUG 2020-09-26 19:40:08]初始化测试数据
+[ERROR 2020-09-26 19:42:19]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素

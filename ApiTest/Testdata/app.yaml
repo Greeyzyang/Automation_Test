@@ -1,6 +1,6 @@
 #设计帽
 Model:
-  - sdk-demo:                                                              # 应用程序
+  - IDT:                                                              # 应用程序
     desired_caps:
       platformName: Android                                                # 使用哪个移动操作系统平台
       deviceName: HDP9K19128907088                                         #通过USB控制设备
@@ -8,10 +8,10 @@ Model:
       platformVersion: 8.1.0                                              # 移动操作系统版本
       noReset: False                                                      # 是否重新安装app
 #      app: C:\Users\EDZ\PycharmProjects\untitled\ApiTest\Testdata\app-debug.apk                 # app安装路径
-#      unicodeKeyboard: True                                               # 启用Unicode输入
-#      resetKeyboard: False                                                # 使用unicodeKeyboard功能运行Unicode测试后，将键盘重置为原始状态。
+      unicodeKeyboard: True                                              # 启用Unicode输入
+      resetKeyboard: True                                                # 使用unicodeKeyboard功能运行Unicode测试后，将键盘重置为原始状态。
       appPackage: com.ryeex.sdk.demo                                      # 运行的Android应用程序的Java包
-      appActivity: com.ryeex.sdk.MainActivity                             # 要从包中启动的Android活动的活动名称
+      appActivity: com.ryeex.sdkband.MainActivity                             # 要从包中启动的Android活动的活动名称
       newCommandTimeout: 300                                             # 设置命令超时时间，单位：秒。达到超时时间仍未接收到新的命令时 Appium 会假设客户端退出然后自动结束会话。
       #automationName : selendroid
 

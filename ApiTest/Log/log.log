@@ -1578,3 +1578,243 @@
 [DEBUG 2020-09-26 19:27:56]初始化测试数据
 [DEBUG 2020-09-26 19:40:08]初始化测试数据
 [ERROR 2020-09-26 19:42:19]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[DEBUG 2020-09-26 20:07:56]初始化测试数据
+[DEBUG 2020-09-27 00:15:03]platfolm_cookies: lvtx.d/0vjPT2zNiVN2YKQl0g3Cdw95M3WfPY1YXHAh0bB7e0uMZu0XIoiiN4azW9Pfr9ymRYBmjyk5zKdhvsa3BvIMIgsxDxERYwxkMKzMnTJPf4A7PxUEseDPVUUetHvNyoQJPeR2ndtIzijqGR7iWj2M/71u9pgJ4Q/Ukw7/2CZvtjC1FpOa6WlSdV1J+H+C/e10Jwew==
+[DEBUG 2020-09-27 00:15:04]wristband_cookies: 3vcUM2IxBxPGt/FI
+[DEBUG 2020-09-27 00:15:04]初始化测试数据
+[DEBUG 2020-09-27 00:15:23]respones没有字段
+[DEBUG 2020-09-27 10:02:39]platfolm_cookies: lvtx.zf89dd+sy6oGqwcGfnWMICIoDVARar+RrhoU5RJ80kS+Og6UFmV3V3ArG/e8MEZ8hVlet3LEI8yURxTXyFXgX9qXDi6kIDzOZ9llulqrzMV6QEncBmunyE5KX/CgQSxXNYRAltlLxeaQjP+3286Uhagp8hifk5vyT52TUeIMBIy/aoVIGlzlWfOk73GbykFsT1Tisw==
+[DEBUG 2020-09-27 10:02:40]wristband_cookies: UiCIS/qoaYG/6Vo1
+[DEBUG 2020-09-27 10:02:40]初始化测试数据
+[DEBUG 2020-09-27 10:02:54]respones没有字段
+[DEBUG 2020-09-27 10:10:20]platfolm_cookies: lvtx.L37GyKDp2mKwdGMJ0sm2iUsQOBoxAEZWGXsazoE5EZx0F/cjkf1qcZvtIZYSdg4I15+RCdeWlNhCFOAY8O1Nd4rrB/loACi2lbd5FCRxBzAeafFL7AeDmMDNGgtpcW+LW0mdTv3RprYqnptOOMNUTknl1hpGocNHtFZhy9msBt6xa32NQVYwYS6tpavqiXpLlKIpaw==
+[DEBUG 2020-09-27 10:10:21]wristband_cookies: Yma3qPVbcRENCeX6
+[DEBUG 2020-09-27 10:10:21]初始化测试数据
+[DEBUG 2020-09-27 10:10:35]respones没有字段
+[DEBUG 2020-09-27 10:17:58]platfolm_cookies: lvtx.TAXGakWNNyjD9WbJinQyCiNu9B04hUCiIyW3rzhDhjVdDkoTLcoCbUQF96UMhThgZ17fKqsz2CeWabg4S+t+FFwe8eOsgqcbcs9vvWYrhiaTCr4KKzFP8i/N5LE660uVx3aAasl8if7lsfXNi2Qou7AmkQghJwnTFJ6HNCAvOvEVpcXw0rd9g7dZqEPguG3z0e6Nqg==
+[DEBUG 2020-09-27 10:17:59]wristband_cookies: sWugBxSznCfJVFns
+[DEBUG 2020-09-27 10:17:59]初始化测试数据
+[DEBUG 2020-09-27 10:18:14]respones没有字段
+[ERROR 2020-09-27 10:38:34]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:34]读取配置文件参数不正确,请检查传参
+[DEBUG 2020-09-27 10:38:35]platfolm_cookies: lvtx.TH05TFRfTYAe34tz87nmwfIRenvjdFybm9HGuWTBdc2zHOyYQMWC3j3mNDOmE6Hj55ZxrJ6S9TEhVqKya647t8Np/EWLC47wWmrYLgTZ/rq4Tmy8tTHXhw+c3H6mbajx3p5cIdgYm2BTxVOFTBnpesjBDaAapB7/fD5A7usGNmFYj+An6HL9TSnbad//Q9i5CkcY8A==
+[DEBUG 2020-09-27 10:38:36]wristband_cookies: YRvoASrtSrzMvOFF
+[DEBUG 2020-09-27 10:38:36]初始化测试数据
+[ERROR 2020-09-27 10:38:38]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:38]读取配置文件参数不正确,请检查传参
+[DEBUG 2020-09-27 10:38:40]platfolm_cookies: lvtx.0wCJZnzmygKFE8/L4SQBZSB76Oiycmf6BEM55XUhOCB9cog03SNfdt22J+YyuDDPCZA6gwUgop210hiUgyFQrURp52tvSTfrJWlZqrzlLfD86mljTOGiBJy4AjHoMinh2F+/OtpqZVUS/Kku6fjXfPc8iwAzYodTVIVbLgm26AO7kRMskZgK8pLIlik0RNYsYTO/MA==
+[DEBUG 2020-09-27 10:38:40]wristband_cookies: ep5pbg+Lju/rzvtD
+[DEBUG 2020-09-27 10:38:40]初始化测试数据
+[ERROR 2020-09-27 10:38:42]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:42]读取配置文件参数不正确,请检查传参
+[DEBUG 2020-09-27 10:38:43]platfolm_cookies: lvtx.SAyo3vSSEvDDLuPPJ/7eUrO9CvbuECr6ySsKx6tywQZwU8e2gaOVKMUGOSmcdPCR3QnlfoK3mUIaa1MeMWBe2oY8E/Bdhlz7aQd4kgppGsFdq+otc1vV8+BHjNPlGuqwM942FbS/jpJDf293DFmXpALel3/CZYopIhjE1THU5c5tE7eprO5ydQEA0XPX0JYvokbDgg==
+[DEBUG 2020-09-27 10:38:44]wristband_cookies: jTZ/dK8qp3MM9aK6
+[DEBUG 2020-09-27 10:38:44]初始化测试数据
+[ERROR 2020-09-27 10:38:45]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:45]读取配置文件参数不正确,请检查传参
+[DEBUG 2020-09-27 10:38:46]platfolm_cookies: lvtx.LzA00sMQlB6u1Wn1xX+xlGbKCBuB0PgAUjY3CwgjukgxNkOOV9hppq4D1Hm2h72Q2p+qUqWIqqDa3KOyLk1sCE1uCbcQaw//Rza/hzsKXZhKVOGf4hbnbFNbqG+3Xx7vrZ51S7YRmpCZyG4PMTam2ErNZdhDgUamwgw1bkcN8EM6ZOYruqdLzdA/3RfFis6R0updOA==
+[DEBUG 2020-09-27 10:38:48]wristband_cookies: ywxg6z4BeZSNmcTe
+[DEBUG 2020-09-27 10:38:48]初始化测试数据
+[ERROR 2020-09-27 10:38:48]response状态码验证失败，预期结果为403,实际结果为401
+[ERROR 2020-09-27 10:38:49]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:49]读取配置文件参数不正确,请检查传参
+[DEBUG 2020-09-27 10:38:50]platfolm_cookies: lvtx.AGdBKqaR+7fzgPRczF404V1E2QY09s+m3H9FBd2I/arcsk/UYIOgFfd/oawQQ9OGLNUN/M+olHYb9fO5JYHsXH1Z5fN/u4kgx5dMeETxqlZFKef+mLIdKSndppieBZtILA0TvHzFthJIEW4Db+TKoJLsM57YHxAHFcJcVEwWL6pH5/LtHV8d4OCsq8X9yIkMKvw9Qw==
+[DEBUG 2020-09-27 10:38:51]wristband_cookies: BWhp2fa/4Th135mQ
+[DEBUG 2020-09-27 10:38:51]初始化测试数据
+[ERROR 2020-09-27 10:38:53]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:53]读取配置文件参数不正确,请检查传参
+[DEBUG 2020-09-27 10:38:54]platfolm_cookies: lvtx.K7/UXEDOSalJjHaEQUqCX3eNjXBIlIyaRVzoaXSg9+eZ+S20m96I1CIOCbwtu1M6F3opT6JdPdDqznZpi9IPqFuuGW5Q6jgRH4sm6D97ziufEHzplo7eGiPvmh5ypOjtlf9duZvgJcLHfnm16TidrQBPiSLiCa0NKL5IW9Gf9aFQ9L/vTLd0TBNPs9zgyK2/fWGohw==
+[DEBUG 2020-09-27 10:38:55]wristband_cookies: Ti0vvVYD6zu2KUmR
+[DEBUG 2020-09-27 10:38:55]初始化测试数据
+[ERROR 2020-09-27 10:38:56]response状态码验证失败，预期结果为1009,实际结果为1
+[DEBUG 2020-09-27 10:44:20]platfolm_cookies: lvtx.6z7eGRh84HD7QyUYJgEMY7R24EUhycS6ldJM4u2dAvd6vmnRPcBjxFbH18xjnzieE3oeaLZ9kj5NDbYMLP/ulsYtSPe2Q1PCPIxnQdIZSs6PYUjFuDzWKqErCHo5s0bVtQTLqioLlacdzQHeT5afTVb+oVcszsr994BEZfsqz36frCad7sD+xcMzxajGNkvRef8yxw==
+[DEBUG 2020-09-27 10:44:21]wristband_cookies: 6JHr3kEtJh3N3ICM
+[DEBUG 2020-09-27 10:44:21]初始化测试数据
+[DEBUG 2020-09-27 10:44:34]respones没有字段
+[DEBUG 2020-09-27 10:52:47]初始化测试数据
+[DEBUG 2020-09-27 11:02:52]初始化测试数据
+[DEBUG 2020-09-27 11:11:22]初始化测试数据
+[ERROR 2020-09-27 11:13:42]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[DEBUG 2020-09-27 11:16:23]初始化测试数据
+[DEBUG 2020-09-27 11:25:09]初始化测试数据
+[ERROR 2020-09-27 11:27:29]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[DEBUG 2020-09-27 11:30:27]初始化测试数据
+[DEBUG 2020-09-27 11:38:33]初始化测试数据
+[DEBUG 2020-09-27 11:46:58]初始化测试数据
+[ERROR 2020-09-27 11:49:19]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[DEBUG 2020-09-27 11:55:41]初始化测试数据
+[DEBUG 2020-09-27 12:00:31]初始化测试数据
+[DEBUG 2020-09-27 12:03:18]初始化测试数据
+[DEBUG 2020-09-27 12:06:28]初始化测试数据
+[ERROR 2020-09-27 12:07:23]xpath 未能找到 //android.widget.TextView[@text="Login"] 元素
+[DEBUG 2020-09-27 12:08:05]初始化测试数据
+[DEBUG 2020-09-27 12:11:30]初始化测试数据
+[DEBUG 2020-09-27 12:14:31]初始化测试数据
+[DEBUG 2020-09-27 12:15:18]初始化测试数据
+[DEBUG 2020-09-27 12:18:10]初始化测试数据
+[DEBUG 2020-09-27 12:21:41]初始化测试数据
+[DEBUG 2020-09-27 12:22:54]初始化测试数据
+[DEBUG 2020-09-27 12:26:55]初始化测试数据
+[DEBUG 2020-09-27 12:30:39]初始化测试数据
+[ERROR 2020-09-27 12:32:35]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[DEBUG 2020-09-27 12:34:06]初始化测试数据
+[ERROR 2020-09-27 12:38:42]xpath 未能找到 //*[@resource-id="com.hualai:id/wyze_main_item_nickname"] 元素
+[DEBUG 2020-09-28 10:01:33]platfolm_cookies: lvtx.lgD/w9tXF/Uhn1EeULtXB0vwjqDX7R2HBNGxXkb1R9BoplbAmH2+SkkzAzQh0PbgIL4c6Thi6CWugZ3xgbMSCSkIQRGUUoF+EZ1E+qldGOychRKfGRkVzoB2re3q2JurXh7hBXrSqWAqUtl4YQyJpA78T/2UetHgGPkpCLeEwPZtDDO13sgIHfQM1SbGxRYsIkIbmg==
+[DEBUG 2020-09-28 10:01:34]wristband_cookies: efWUbYq+FVdX5bFX
+[DEBUG 2020-09-28 10:01:34]初始化测试数据
+[DEBUG 2020-09-28 10:01:46]respones没有字段
+[DEBUG 2020-09-28 10:02:10]platfolm_cookies: lvtx.OaoZfKgziI0TzJe0cF/wBakqzMXD++cknj7kkJDX0SdFcDgbDvqZjgl6uqafhz1k3R38zX4Oc9eQRIvpLxgZNf+V9VniPEwp9t+k/VBnZUziJSAkN5zwv2Brbp4cRuoe2PVhXJ8IBJp/9NylLlKo6iL+NyaC0cBg3tx2ADqEKxLbGys7f8cdN/jHIjGoBubqnXc5wg==
+[DEBUG 2020-09-28 10:02:12]wristband_cookies: 6xrZBhKYN5ZIhQEH
+[DEBUG 2020-09-28 10:02:12]初始化测试数据
+[DEBUG 2020-09-28 10:02:24]respones没有字段
+[DEBUG 2020-09-28 11:20:39]初始化测试数据
+[DEBUG 2020-09-28 14:14:09]初始化测试数据
+[DEBUG 2020-09-28 14:59:58]初始化测试数据
+[DEBUG 2020-09-28 15:00:18]初始化测试数据
+[DEBUG 2020-09-28 15:01:23]初始化测试数据
+[ERROR 2020-09-28 15:04:18]xpath 未能找到 //*[@resource-id="com.hualai:id/wyze_main_item_nickname"] 元素
+[DEBUG 2020-09-28 15:05:05]platfolm_cookies: lvtx./nTvZ4nFBHW2gXzYhIado8Hg+Mg0PmSSMVHhWFdK22JQBDZBS9JOAdcPNGYEinshHnHSH8J8oDTiATI8L1HNxXlvuu020S2B5i1olehE9Zfh773buIqgXItzrEVRmXqs6CbmGcEUoGfVlRkkg8lcBqvL0TzxnAw4CJRB4byerek/vPrIka9mlS/UjNXdsyjd3EM7hw==
+[DEBUG 2020-09-28 15:05:05]wristband_cookies: NN5oEQl3Qsb4FmDe
+[DEBUG 2020-09-28 15:05:05]初始化测试数据
+[DEBUG 2020-09-28 15:05:19]respones没有字段
+[DEBUG 2020-09-28 15:05:44]初始化测试数据
+[ERROR 2020-09-28 15:08:03]xpath 未能找到 //*[@resource-id="com.hualai:id/wyze_main_item_nickname"] 元素
+[DEBUG 2020-09-28 15:13:17]初始化测试数据
+[ERROR 2020-09-28 15:15:19]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-09-28 15:26:05]xpath 未能找到 //*[@resource-id="com.hualai:id/wyze_main_item_nickname"] 元素
+[DEBUG 2020-09-28 15:34:40]初始化测试数据
+[ERROR 2020-09-28 15:37:06]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[DEBUG 2020-09-28 15:39:53]初始化测试数据
+[ERROR 2020-09-28 15:51:30]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[DEBUG 2020-09-28 15:55:33]初始化测试数据
+[ERROR 2020-09-28 16:07:10]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[DEBUG 2020-09-28 16:17:17]初始化测试数据
+[DEBUG 2020-09-28 16:19:01]初始化测试数据
+[DEBUG 2020-09-28 16:22:47]初始化测试数据
+[DEBUG 2020-09-28 16:27:10]初始化测试数据
+[DEBUG 2020-09-28 16:37:10]初始化测试数据
+[DEBUG 2020-09-28 16:55:03]初始化测试数据
+[DEBUG 2020-09-28 16:58:27]初始化测试数据
+[DEBUG 2020-09-28 16:59:04]初始化测试数据
+[DEBUG 2020-09-28 17:02:07]初始化测试数据
+[DEBUG 2020-09-28 17:03:25]初始化测试数据
+[DEBUG 2020-09-28 17:04:20]初始化测试数据
+[DEBUG 2020-09-28 18:46:58]初始化测试数据
+[ERROR 2020-09-28 18:48:55]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-09-28 18:49:16]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[DEBUG 2020-09-28 18:50:49]初始化测试数据
+[ERROR 2020-09-28 18:52:46]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-09-28 18:53:06]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[DEBUG 2020-09-28 18:56:57]初始化测试数据
+[ERROR 2020-09-28 18:58:56]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-09-28 19:12:58]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[DEBUG 2020-09-28 23:10:00]platfolm_cookies: lvtx.hFVr0KTA6CVYaM/NgQKWx8WVOyYoETwumDDQB8PZLW1DGz3pi4jHIgmXti3bGVek7eV5dPojmBMgwPBoUU1khYtQfFBwcs18EaQn2/qN95nh9a9ZfxxXikqStDswirf9A4Fycl7SU9LoebCE8KMP/mfH9eRX8VSObCCU2HqtqdZvouj8HvhuOZcGM13WNeBvTqXtow==
+[DEBUG 2020-09-28 23:10:01]wristband_cookies: R+unHaUlMLmxhvek
+[DEBUG 2020-09-28 23:10:01]初始化测试数据
+[DEBUG 2020-09-28 23:10:13]respones没有字段
+[DEBUG 2020-10-01 10:20:04]platfolm_cookies: lvtx.KPwJDrYBPweUTj5LqcN1AJBaJUDuttn7O/tIc4Af4Aij+BZS3RfcLWzCtwR0Izw+ec9fbEoLwqIspQkBXBfmhSjtM7YGnDPr/LKCj/Nd07GTZ+LsgmhTctSb6jv0GpOpa0B/cTH0PVOMsqy7X2bO621tipuAuPClOIhs/yGaySdfvWnzsp4SAYJOVLoBL51BQITxOw==
+[DEBUG 2020-10-01 10:20:05]wristband_cookies: m7DsdWCcjxGe27EN
+[DEBUG 2020-10-01 10:20:05]初始化测试数据
+[DEBUG 2020-10-01 10:20:18]respones没有字段
+[DEBUG 2020-10-02 23:09:57]platfolm_cookies: lvtx.IMPfpIAzagfql3kP5b+PFPwK7UYyTvr/AUQtwKoItDenoqTDRgRAa0p4O3JWk13zlqyQuglROvxYMO4lVHXaQhBgXzN2yo/KgLiiNboCwI9hWHk0hG1obk4izM02mYJoUH+CA2ZazGM0tOvTxqekWvZBbEfckNAwS7UxNynPlZF4l/Z8LzaKbD7VXXlZDHoy+c46sQ==
+[DEBUG 2020-10-02 23:09:58]wristband_cookies: mYtoRb7q7kEIad0e
+[DEBUG 2020-10-02 23:09:58]初始化测试数据
+[DEBUG 2020-10-02 23:10:11]respones没有字段
+[DEBUG 2020-10-04 23:10:04]platfolm_cookies: lvtx.Vj9D8+iAzm9dU+nckMSNUpp1N//sdOmeImyWM1Qan7gjBmgBcKKWC/3UZH3uJ3DHjqdAyCZOjQppCC9GOURijDagbqsTPlXrOViGp68RJ0E4sjRPFAof/cJOp9ymNngXIsaM3Q9+VoaBZRmh66mjNTPMWlWcGMn2D5WZHUBtOtoDIpbzf+tm7V32GUDAnL2yHkRkbw==
+[DEBUG 2020-10-04 23:10:05]wristband_cookies: tLZZWUXg6wqULE/U
+[DEBUG 2020-10-04 23:10:05]初始化测试数据
+[DEBUG 2020-10-04 23:10:20]respones没有字段
+[DEBUG 2020-10-07 23:10:05]platfolm_cookies: lvtx.W4KbwH1b4qGQ+ydrGHKMMsCkz7maPnEznuO1cgicDuWnQKZEMMFI5M/GPK8R8Yc+aD7W2NZM9SxzEQJ/bp1J2QSuACwpoHx5FIhL2BCQuijEfdpbAT601r2oUU6tZ9YKppyqYspOEPgFkwDjX1v753btQbSm6wA2D8915y+4n8SmJWdD/GeO30Fz78AX91Bw/h2WuQ==
+[DEBUG 2020-10-07 23:10:10]wristband_cookies: oRx8jSWCjuZBgyNj
+[DEBUG 2020-10-07 23:10:10]初始化测试数据
+[ERROR 2020-10-07 23:10:45]post请求失败，请检查
+[DEBUG 2020-10-09 20:26:45]platfolm_cookies: lvtx.d0pQrO1T8a6PLq48N2egkjmZWkNLyRqG/4nBOPQyHBJvhlYs/SpYBT5a5WDmCRZgROwX8OX0hLHcLZ0MbASFE3HDllT06ZUZlangZvDiYmeUGkKiLqTgctkiyAOK+9mjDFCiiLEQGz4gOA3hFHDBSS2Ml5CoSWurVAE+98UJL27+sxCCJdkfWcHxkaoKX22W5t6Rhw==
+[DEBUG 2020-10-09 20:26:46]wristband_cookies: 8UDc+Y6G2ggRax2x
+[DEBUG 2020-10-09 20:26:46]初始化测试数据
+[DEBUG 2020-10-09 20:26:58]respones没有字段
+[DEBUG 2020-10-10 10:20:07]platfolm_cookies: lvtx.JsiWtJM0KuEPXlL3aIMBhuT65XAOP7uSrBV9kXoRKwVn5Q6KiaLcc2wZleV9KcjqUSbiRCOulEn5ApHU9qhl8khZ9Q9gf9aJhZOW8dFzzm7Sh4Pl77Bdq2zfi+5jCL9Aen9xA+aiblIiw975R8c/JLWmRABBOvZNiXJDCuRQx/Fl0ZV5IpbxXjPAOIrarGywfuaa/g==
+[DEBUG 2020-10-10 10:20:08]wristband_cookies: BY9wQ4V+WljJIiKs
+[DEBUG 2020-10-10 10:20:08]初始化测试数据
+[DEBUG 2020-10-10 10:20:23]respones没有字段
+[DEBUG 2020-10-10 14:51:11]初始化测试数据
+[DEBUG 2020-10-10 14:59:58]初始化测试数据
+[DEBUG 2020-10-10 15:11:46]初始化测试数据
+[DEBUG 2020-10-10 15:32:09]初始化测试数据
+[DEBUG 2020-10-10 15:37:46]初始化测试数据
+[DEBUG 2020-10-10 15:46:33]初始化测试数据
+[DEBUG 2020-10-10 15:48:02]初始化测试数据
+[DEBUG 2020-10-10 16:00:50]初始化测试数据
+[DEBUG 2020-10-10 16:11:46]初始化测试数据
+[DEBUG 2020-10-10 16:29:49]初始化测试数据
+[DEBUG 2020-10-10 16:31:55]初始化测试数据
+[DEBUG 2020-10-10 17:01:35]初始化测试数据
+[DEBUG 2020-10-10 17:17:42]初始化测试数据
+[DEBUG 2020-10-10 17:22:01]初始化测试数据
+[DEBUG 2020-10-10 17:28:34]初始化测试数据
+[DEBUG 2020-10-10 17:50:50]初始化测试数据
+[DEBUG 2020-10-10 17:52:48]初始化测试数据
+[DEBUG 2020-10-10 17:53:09]初始化测试数据
+[DEBUG 2020-10-10 17:58:46]初始化测试数据
+[DEBUG 2020-10-10 18:01:28]初始化测试数据
+[DEBUG 2020-10-10 18:06:50]初始化测试数据
+[DEBUG 2020-10-10 18:10:51]初始化测试数据
+[DEBUG 2020-10-10 18:15:43]初始化测试数据
+[DEBUG 2020-10-10 18:18:10]初始化测试数据
+[DEBUG 2020-10-10 18:19:45]初始化测试数据
+[DEBUG 2020-10-10 18:22:01]初始化测试数据
+[DEBUG 2020-10-10 18:50:16]初始化测试数据
+[DEBUG 2020-10-10 18:51:40]初始化测试数据
+[DEBUG 2020-10-10 18:52:32]初始化测试数据
+[DEBUG 2020-10-10 19:02:28]初始化测试数据
+[DEBUG 2020-10-10 19:20:46]初始化测试数据
+[DEBUG 2020-10-10 19:21:02]初始化测试数据
+[DEBUG 2020-10-10 19:21:15]初始化测试数据
+[DEBUG 2020-10-10 19:22:44]初始化测试数据
+[DEBUG 2020-10-10 19:36:43]初始化测试数据
+[DEBUG 2020-10-10 19:40:54]初始化测试数据
+[DEBUG 2020-10-10 19:42:59]初始化测试数据
+[DEBUG 2020-10-10 19:49:24]初始化测试数据
+[DEBUG 2020-10-10 19:53:46]初始化测试数据
+[DEBUG 2020-10-10 19:55:18]初始化测试数据
+[DEBUG 2020-10-10 19:58:29]初始化测试数据
+[DEBUG 2020-10-10 20:06:19]初始化测试数据
+[DEBUG 2020-10-10 20:10:06]初始化测试数据
+[DEBUG 2020-10-10 20:12:30]初始化测试数据
+[DEBUG 2020-10-10 20:18:48]初始化测试数据
+[DEBUG 2020-10-10 20:19:47]初始化测试数据
+[DEBUG 2020-10-10 20:27:28]初始化测试数据
+[DEBUG 2020-10-10 20:27:46]初始化测试数据
+[DEBUG 2020-10-10 20:31:40]初始化测试数据
+[DEBUG 2020-10-10 20:36:50]初始化测试数据
+[DEBUG 2020-10-10 20:39:06]初始化测试数据
+[DEBUG 2020-10-10 20:49:30]初始化测试数据
+[DEBUG 2020-10-10 20:54:59]初始化测试数据
+[DEBUG 2020-10-10 20:56:38]初始化测试数据
+[DEBUG 2020-10-11 11:19:18]platfolm_cookies: lvtx.bjWv4wxj/W4YX2gKyRj1uISq4GiPl8T7adhItY1J3yQzZuxjNZQk8S060W2PhwvrNQSBgRAh/q10RezYt55TtbaYo4iHVeLtbd2wtSUIo9tr/KTvl2H0ntuQVeIPyBH2RavNJPfoB4GlnajhN66oJmqHsXRDmCKRGLawVfhlA7SMPv3s0uGmAFUzB5Xq6JsxTtfJFg==
+[DEBUG 2020-10-11 11:19:20]wristband_cookies: EK9tj1jNFI9VPglS
+[DEBUG 2020-10-11 11:19:20]初始化测试数据
+[DEBUG 2020-10-11 11:19:44]respones没有字段
+[DEBUG 2020-10-11 23:10:03]platfolm_cookies: lvtx.6wpj0K/2qxorkyjn6ZCRvdk14zTEqtreVRv6T+EQq39zcvmp2FNkun8PP8ws830SGqwnSLOzCTrHWVkUMLooM9DWlocXV38vyQvjj4g2JEPtiD6hE1VWoqQcNISdX8CNla05rScutXJOO/FyIpNB869kQvzncrnltSjZkBpANrLx34HY7S43VVDR4iF3rUx8ozp3ag==
+[DEBUG 2020-10-11 23:10:04]wristband_cookies: LIziO+gl664j4wcb
+[DEBUG 2020-10-11 23:10:04]初始化测试数据
+[DEBUG 2020-10-11 23:10:18]respones没有字段
+[DEBUG 2020-10-12 09:56:50]初始化测试数据
+[DEBUG 2020-10-12 10:03:00]初始化测试数据
+[DEBUG 2020-10-12 10:06:45]初始化测试数据
+[DEBUG 2020-10-12 10:15:16]初始化测试数据
+[DEBUG 2020-10-12 10:18:53]初始化测试数据
+[DEBUG 2020-10-12 10:19:30]初始化测试数据
+[DEBUG 2020-10-12 10:26:55]初始化测试数据
+[DEBUG 2020-10-12 10:29:49]初始化测试数据
+[DEBUG 2020-10-12 10:35:55]初始化测试数据
+[DEBUG 2020-10-12 10:55:08]初始化测试数据
+[DEBUG 2020-10-12 10:56:55]初始化测试数据
+[DEBUG 2020-10-12 10:59:36]初始化测试数据
+[DEBUG 2020-10-12 11:03:04]初始化测试数据
+[DEBUG 2020-10-12 11:08:06]初始化测试数据
+[DEBUG 2020-10-12 11:10:43]初始化测试数据
+[DEBUG 2020-10-12 11:13:45]初始化测试数据
+[DEBUG 2020-10-12 11:18:55]初始化测试数据
+[DEBUG 2020-10-12 11:36:57]初始化测试数据
+[DEBUG 2020-10-12 11:49:42]初始化测试数据
+[DEBUG 2020-10-12 11:54:42]初始化测试数据

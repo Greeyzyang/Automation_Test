@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time : 2020/9/15 17:04
 # @Author : Greey
-# @FileName: Test_AppSDK_Smoke.py
+# @FileName: Test_IDT_Smoke.py
 
 
 
@@ -54,46 +54,44 @@ class TestClass:
         self.driver = self.app.open_app()
         self.app.click_prompt_box()
         size = self.driver.get_window_size()                                                                           #获取屏幕尺寸
-        if self.app.object_exist("2C:AA:8E:01:01:92") == False:
+        if self.app.object_exist("2C:AA:8E:00:AB:95") == False:
             self.app.close_app()
             self.app_setting.restart_bluetooth()                                                                       #重启蓝牙
-            self.app.open_app()
+            self.driver = self.app.open_app()
             self.app.click_prompt_box()
-            if self.app.object_exist("2C:AA:8E:01:01:92") == False:
+            if self.app.object_exist("2C:AA:8E:00:AB:95") == False:
                 self.driver.keyevent(4)                                                                                #模拟返回键
                 self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="解绑"]').click()
-        self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="2C:AA:8E:01:01:92"]').click()
+        self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="2C:AA:8E:00:AB:95"]').click()
         # self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="请在设备上点击确认"]')
         # self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="绑定成功"]')
-
-
-        self.app.find_elementby(By.XPATH, '//*[@class="android.widget.Button" and @text="完成"]').click()
+        # self.app.find_elementby(By.XPATH, '//*[@class="android.widget.Button" and @text="完成"]').click()
         self.app.click_prompt_box()
         self.app.click_prompt_box()
-        self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="2C:AA:8E:01:01:92  已连接"]')
+        self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="2C:AA:8E:00:AB:95  已连接"]')
         self.app.tv_device_info()                                                                                      #设备信息
         self.app.tv_device_property()                                                                                  #设备电量
         self.app.tv_device_activity()                                                                                  #活动数据
         self.app.tv_device_data()                                                                                      #数据同步
         self.app.tv_find_device()                                                                                      #查找手环
         self.app.tv_reboot_device()                                                                                    #重启手环
-        self.app.tv_send_notification()                                                                                #发送通知
+        self.app.tv_send_notification("{\"telephony\":{\"contact\":\"reeyx\",\"number\":\"1234567\",\"status\":\"RINGING_UNANSWERABLE\"},\"type\":\"TELEPHONY\"}")                                                                               #发送通知
         self.app.tv_app_list()                                                                                         #获取应用排序
-        self.app.tv_set_app_list()                                                                                     #设置应用排序
+        self.app.tv_set_app_list("2,3,5,6,7,8,11,12,13,14,15")                                                                                     #设置应用排序
         self.app.swpe(size['width']*0.25, size['height']*0.85, size['width']*0.25, size['height']*0.5)
         self.app.tv_getDoNotDisturb()                                                                                  #获取勿扰模式
-        self.app.tv_setDoNotDisturb()                                                                                  #设置勿扰模式
+        self.app.tv_setDoNotDisturb("{\"homeVibrate\":0,\"lunchModeEnable\":0,\"mode\":\"ALWAYS\",\"raiseToWake\":0}")                                                                                  #设置勿扰模式
         self.app.tv_getDeviceRaiseToWake()                                                                             #获取抬腕亮屏
-        self.app.tv_setDeviceRaiseToWake()                                                                             #设置抬腕亮屏
+        self.app.tv_setDeviceRaiseToWake("{\"enable\":true,\"endTimeHour\":10,\"endTimeMinute\":00,\"startTimeHour\":8,\"startTimeMinute\":00}")                                                                             #设置抬腕亮屏
         self.app.tv_getHeartRateDetect()                                                                               #获取心率检测
-        self.app.tv_setHeartRateDetect()                                                                               #设置心率检测
+        self.app.tv_setHeartRateDetect("{\"enable\":true,\"interval\":10}")                                                                               #设置心率检测
         self.app.swpe(size['width']*0.25, size['height']*0.95, size['width']*0.25, size['height']*0.5)
         self.app.tv_getDeviceBrightness()                                                                              #获取屏幕亮度
-        self.app.tv_setDeviceBrightness()                                                                              #设置屏幕亮度
+        self.app.tv_setDeviceBrightness("MID")                                                                        #设置屏幕亮度
         self.app.tv_getHomeVibrateSetting()                                                                            #获取震动开关
-        self.app.tv_setHomeVibrateSetting()                                                                            #设置震动开关
+        self.app.tv_setHomeVibrateSetting("true")                                                                            #设置震动开关
         self.app.tv_setUnlock()                                                                                        #设置解锁方式
-        self.app.tv_getUnlock()                                                                                        #获取解锁方式
+        self.app.tv_getUnlock("1")                                                                                        #获取解锁方式
         self.app.swpe(size['width']*0.25, size['height']*0.25, size['width']*0.25, size['height']*0.95)
         self.app.tv_unbind()                                                                                           #解绑
         self.app.close_app()                                                                                           #关闭App

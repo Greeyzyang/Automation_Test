@@ -153,3 +153,37 @@
 [ERROR 2020-09-26 14:59:02]xpath 未能找到 //android.widget.EditText[@text="Enable Background Service"] 元素
 [ERROR 2020-09-26 15:39:18]xpath 未能找到 //*[@resource-id="com.hualai:id/wyze_main_item_nickname"] 元素
 [ERROR 2020-09-26 19:42:19]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[ERROR 2020-09-27 10:38:34]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:34]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:38]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:38]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:42]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:42]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:45]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:45]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:48]response状态码验证失败，预期结果为403,实际结果为401
+[ERROR 2020-09-27 10:38:49]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:49]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:53]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:53]读取配置文件参数不正确,请检查传参
+[ERROR 2020-09-27 10:38:56]response状态码验证失败，预期结果为1009,实际结果为1
+[ERROR 2020-09-27 11:13:42]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[ERROR 2020-09-27 11:27:29]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[ERROR 2020-09-27 11:49:19]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[ERROR 2020-09-27 12:07:23]xpath 未能找到 //android.widget.TextView[@text="Login"] 元素
+[ERROR 2020-09-27 12:32:35]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-09-27 12:38:42]xpath 未能找到 //*[@resource-id="com.hualai:id/wyze_main_item_nickname"] 元素
+[ERROR 2020-09-28 15:04:18]xpath 未能找到 //*[@resource-id="com.hualai:id/wyze_main_item_nickname"] 元素
+[ERROR 2020-09-28 15:08:03]xpath 未能找到 //*[@resource-id="com.hualai:id/wyze_main_item_nickname"] 元素
+[ERROR 2020-09-28 15:15:19]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-09-28 15:26:05]xpath 未能找到 //*[@resource-id="com.hualai:id/wyze_main_item_nickname"] 元素
+[ERROR 2020-09-28 15:37:06]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[ERROR 2020-09-28 15:51:30]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[ERROR 2020-09-28 16:07:10]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[ERROR 2020-09-28 18:48:55]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-09-28 18:49:16]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[ERROR 2020-09-28 18:52:46]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-09-28 18:53:06]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[ERROR 2020-09-28 18:58:56]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-09-28 19:12:58]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[ERROR 2020-10-07 23:10:45]post请求失败，请检查

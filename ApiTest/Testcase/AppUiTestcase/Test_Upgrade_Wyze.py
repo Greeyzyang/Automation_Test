@@ -41,9 +41,10 @@ class TestClass:
         self.driver = self.app.open_app()
         self.app.click_prompt_box()
         self.app.login_wyze("zyang3647@gmail.com", "Yxz@2020")
-        self.app.upgrade_wyze("1.0.6.78")
-        self.app.upgrading()
         self.app.upgrade_wyze("1.0.6.43")
+        self.app.upgrading()
+        time.sleep(5)
+        self.app.upgrade_wyze_again("1.0.6.78")
         self.app.upgrading()
         self.app.close_app()
 

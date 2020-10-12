@@ -187,3 +187,9 @@
 [ERROR 2020-09-28 18:58:56]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
 [ERROR 2020-09-28 19:12:58]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
 [ERROR 2020-10-07 23:10:45]post请求失败，请检查
+[ERROR 2020-10-12 16:06:24]xpath 未能找到 //*[@class="android.widget.TextView" and @text="2C:AA:8E:00:AB:95"] 元素
+[ERROR 2020-10-12 16:16:24]App页面Response验证失败DoNotDisturbSetting{mode=ALWAYS, durations=[DndDuration{startTimeHour=22, startTimeMinute=0, endTimeHour=8, endTimeMinute=0, tag='default'}, DndDuration{startTimeHour=12, startTimeMinute=0, endTimeHour=14, endTimeMinute=0, tag='lunch'}], raiseToWake=0, homeVibrate=0, lunchModeEnable=0}
+[ERROR 2020-10-12 16:28:57]App页面Response验证失败[2, 3, 5, 6, 7, 8, 11, 12, 13, 14, 15]
+[ERROR 2020-10-12 16:39:24]App页面Response验证失败[2, 3, 5, 6, 7, 8, 11, 12, 13, 14, 15]
+[ERROR 2020-10-12 16:54:52]App页面Response验证失败[2, 3, 5, 6, 7, 8, 11, 12, 13, 14, 15]
+[ERROR 2020-10-12 17:13:58]App页面Response验证失败[2, 3, 5, 6, 7, 8, 11, 12, 13, 14, 15]

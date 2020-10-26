@@ -1855,3 +1855,123 @@
 [DEBUG 2020-10-13 09:49:57]wristband_cookies: k8B/AUdY0Dh4PBwl
 [DEBUG 2020-10-13 09:49:57]初始化测试数据
 [DEBUG 2020-10-13 09:50:14]respones没有字段
+[DEBUG 2020-10-13 20:46:25]初始化测试数据
+[DEBUG 2020-10-13 23:10:03]platfolm_cookies: lvtx.MxIfVOvCmgsFtoyBGH6aIOvNNZ/EE/kXxrcS5+BLD2Yv7ISGjnUgPoZJqJzAi37fXPTT0EaZjRhjFRcCRokpHDGLFePMqU/BIypUGDqgFTwwzvgRJjgm7F/WCqBhhmbZuwOSCIGiL4VOwR1faqAwmX3aQ/h8wGa1egYns6kJH9M2OWXuHZ+Vk5gU/B+9KGCZ4ka4Uw==
+[DEBUG 2020-10-13 23:10:04]wristband_cookies: FzoRX3+4d0XSpFBM
+[DEBUG 2020-10-13 23:10:04]初始化测试数据
+[DEBUG 2020-10-13 23:10:17]respones没有字段
+[DEBUG 2020-10-14 10:37:53]初始化测试数据
+[DEBUG 2020-10-14 10:41:52]初始化测试数据
+[DEBUG 2020-10-14 10:44:19]初始化测试数据
+[DEBUG 2020-10-14 10:45:27]初始化测试数据
+[ERROR 2020-10-14 10:48:08]xpath 未能找到 //*[@resource-id="com.hualai:id/lottie_animation"] 元素
+[ERROR 2020-10-14 10:48:46]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[DEBUG 2020-10-14 10:49:19]初始化测试数据
+[ERROR 2020-10-14 10:51:16]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-10-14 10:51:57]xpath 未能找到 //*[@resource-id="com.hualai:id/lottie_animation"] 元素
+[ERROR 2020-10-14 10:52:35]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[DEBUG 2020-10-14 14:11:59]初始化测试数据
+[ERROR 2020-10-14 14:13:54]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-10-14 14:14:10]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[DEBUG 2020-10-14 14:15:55]初始化测试数据
+[ERROR 2020-10-14 14:17:50]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-10-14 14:18:29]xpath 未能找到 //*[@resource-id="com.hualai:id/lottie_animation"] 元素
+[ERROR 2020-10-14 14:19:07]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[DEBUG 2020-10-14 14:20:00]初始化测试数据
+[ERROR 2020-10-14 14:21:54]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-10-14 14:22:37]xpath 未能找到 //*[@resource-id="com.hualai:id/lottie_animation"] 元素
+[ERROR 2020-10-14 14:23:14]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[DEBUG 2020-10-14 14:29:13]初始化测试数据
+[ERROR 2020-10-14 14:31:09]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-10-14 14:31:25]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[DEBUG 2020-10-14 14:36:45]初始化测试数据
+[ERROR 2020-10-14 14:37:28]xpath 未能找到 //android.widget.TextView[@text="Login"] 元素
+[DEBUG 2020-10-14 14:38:46]初始化测试数据
+[ERROR 2020-10-14 14:39:19]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-10-14 14:39:34]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[DEBUG 2020-10-14 14:41:43]初始化测试数据
+[ERROR 2020-10-14 14:42:19]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-10-14 14:42:52]xpath 未能找到 //*[@resource-id="com.hualai:id/lottie_animation"] 元素
+[ERROR 2020-10-14 14:43:28]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[DEBUG 2020-10-14 14:57:34]初始化测试数据
+[DEBUG 2020-10-14 14:58:13]初始化测试数据
+[ERROR 2020-10-14 14:58:52]xpath 未能找到 //android.widget.TextView[@text="Login"] 元素
+[DEBUG 2020-10-14 14:59:22]初始化测试数据
+[ERROR 2020-10-14 15:00:29]xpath 未能找到 //*[@resource-id="com.hualai:id/lottie_animation"] 元素
+[ERROR 2020-10-14 15:01:07]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[DEBUG 2020-10-14 23:10:04]platfolm_cookies: lvtx.YCMEUOIsHSm4ZMIlf3jQaWOWmb/wba6450bVGWTBgY/etmWMCk10uDdzngoRfsIEIU2R3y3nXDG9VW2F/SMT0919wmN3R2e+Bb+s6cY/4BzLtZwomcdzGRSIL0whH3wv69zOyPv7ddY9NTOeTqTFzKqfNGVTd0Z+0iwwXprMV7Dayey3H1vfDGpyZCp8XNxs5WaDEA==
+[DEBUG 2020-10-14 23:10:05]wristband_cookies: 6f0LCI1Bd2Yhb2vj
+[DEBUG 2020-10-14 23:10:05]初始化测试数据
+[DEBUG 2020-10-14 23:10:20]respones没有字段
+[DEBUG 2020-10-15 16:00:44]初始化测试数据
+[DEBUG 2020-10-15 23:10:05]platfolm_cookies: lvtx.tUOFJc+TLuQ0DvbjUx+y84K9oL1JsuuEci5cgbndCjtKv6e6l+8u3FV5cj8qQcpJm8n9EpuXNEN5jYBIWyrEeADzESxwzIuOQe74Zll/Kz1QOUgJbG2aVsAzy547rMLPVFoZD6XTRYKnE8B2nu0l0MZcD0OAQllXjHc27Z3yZl7JTrvwsqizBYu6zSsRC17cckNjhw==
+[DEBUG 2020-10-15 23:10:06]wristband_cookies: PaN3ZgNKfRwM4+Sw
+[DEBUG 2020-10-15 23:10:06]初始化测试数据
+[DEBUG 2020-10-15 23:10:17]respones没有字段
+[DEBUG 2020-10-16 23:10:03]platfolm_cookies: lvtx.ebKDud5LpJmV48xcZSHlKBSMDrPlKexI1OOi4PfANqzWAkxCh9GNUBaS98OUa7cWUgYpyp63Ut1AdKSpNnN3u3utLK7GFLDqI9qC+V4Q3Qx+VMGo0tUEgKERuk+nMMwVLJG65qxNjBlx7TFJYKtdm808Rn/Jf7Qm2J/2XGsz2xkhsg248tnzYXvu1CIa3O2hpaXqMw==
+[DEBUG 2020-10-16 23:10:04]wristband_cookies: Eqd7aITA6412HE6Q
+[DEBUG 2020-10-16 23:10:04]初始化测试数据
+[DEBUG 2020-10-16 23:10:17]respones没有字段
+[DEBUG 2020-10-17 23:10:04]platfolm_cookies: lvtx.FawLy3LYiHLrV5bXPm/dfLpPJL6bxGFJ3CkaEszm9CylAprAYWZ3JkF7HYNXvF+Q2HlhHxcawDGN0rfNg0kBtvcrGqOVnyv6JF9pLByQh/CxBb64jJIar8NF2N9Nw30u75Stpwk1O8eTLW/g4YASM3PMlfXH2pQL9O9Qm3ScrlL8SmjXKTdizirRUOq8CHWoyEhyQw==
+[DEBUG 2020-10-17 23:10:05]wristband_cookies: hyQDD+rcNAukNR6X
+[DEBUG 2020-10-17 23:10:05]初始化测试数据
+[DEBUG 2020-10-17 23:10:16]respones没有字段
+[DEBUG 2020-10-18 23:10:04]platfolm_cookies: lvtx.IfwkyLqKw+j2CmugFRKROiLpeQ4yBmkQzVUZSJ+n1TNUc3DQb1981gFLAjnCK154H+I2YeVmYgwj2EBdqxN661EUk2J75MMmj++2643+22JknK7DO+d4qkoAvFIV/ptbFGslAdkzN7ZPT15GVE3apNUHgSpuxXULsyB3CfdsLqR1f5BfBjgAOka3veMi4GKkqaGGQQ==
+[DEBUG 2020-10-18 23:10:05]wristband_cookies: cSwGxlAj0CGQsMzR
+[DEBUG 2020-10-18 23:10:05]初始化测试数据
+[DEBUG 2020-10-18 23:10:16]respones没有字段
+[DEBUG 2020-10-19 23:10:04]platfolm_cookies: lvtx.fPf+muwr5owd0ZYjUX+kFN+MylEehbbEToxTw6yfyZfG75z+Kwq+4ItCSXi9sDK28xaF8HqBLAEt9Hzu8ksV6zFq/POdyHCTpVZXm/+HdDoxZiEXD1KrZA+mLrw4TfjmfBeNBN5QkKANgCJU/PIu7oJwV3KOoOozUs67TnZYJzPyyS7P2/g7n3XBfgjB41+4Q6alxA==
+[DEBUG 2020-10-19 23:10:05]wristband_cookies: Vw5t3Xom2IC1+CFv
+[DEBUG 2020-10-19 23:10:05]初始化测试数据
+[DEBUG 2020-10-19 23:10:16]respones没有字段
+[DEBUG 2020-10-20 23:10:05]platfolm_cookies: lvtx.9Sb1nMeFCbtuzmaLW04gK9zlqET5EBA0cbQ+fXR1DEgPqqCFm0ci/wcdQx4XwsEDkhgFf5+VGz89s2zuCti9fow/7a0F3qbAFUVo2ZIsTAcjJWWP3EXXQgcUkB/AQZDh7zU21KmhtotikfapWD3kB4NDoGP90lTNlvA2+rY/y9s0ii2ac3zuII4HUQtgDDPEcqpxLA==
+[DEBUG 2020-10-20 23:10:05]wristband_cookies: j4vekcR9IMeyTDrC
+[DEBUG 2020-10-20 23:10:05]初始化测试数据
+[DEBUG 2020-10-20 23:10:19]respones没有字段
+[DEBUG 2020-10-21 23:10:02]platfolm_cookies: lvtx.DMG+Z22Y37+qRTP4J+0lkjwINoGi3l4ZwlOFuAAt6rl+q671Q8Z9QMQP1yuY9Mu2LnX5gDr/zXPMakO9VOsM72DQgB5sLA3kPT1ZdwwY7QqFjiNjlRifd4piGFjR9jHoAXh2thMMNF8cly2xK2dRxZYPIG7U33j3aK+hEoJzSNaLp0RbvwzN09Wej7b9EvOj8hH1nw==
+[DEBUG 2020-10-21 23:10:03]wristband_cookies: Ls9iQamj6YuKPzIs
+[DEBUG 2020-10-21 23:10:03]初始化测试数据
+[DEBUG 2020-10-21 23:10:15]respones没有字段
+[DEBUG 2020-10-23 23:10:05]platfolm_cookies: lvtx.gWWRFZGOmo/FfD9tW4Sy8JnkABD/LpEqlr1H1TsBQ02LEcl8OXOHMHJe2KmQGTittMWQqn+/VP/m7cKP4uQ1lACgRZ/NROet+jY5b9X/Vdj/KE7bd4W/gfy3a6EWqn6w2LdnM3aNDg7JV7MCdisDxCbgkiOtw7aGtNhsCXw0qzsqVJJcuCRN84F7o27WUtmEyLI0rg==
+[DEBUG 2020-10-23 23:10:06]wristband_cookies: iHgg3CGLQVW+GGJr
+[DEBUG 2020-10-23 23:10:06]初始化测试数据
+[DEBUG 2020-10-23 23:10:23]respones没有字段
+[DEBUG 2020-10-24 23:10:04]platfolm_cookies: lvtx.uKZAF2VqkYNZgvq0JdjD9i+xqyIGOi8WBHviLBcnX2uLTw7Vjo4ZG0zJc80YDiDKQrCtFTxU79rSH/9MriKbzqMDs5wj7Xb7lx1dlWBKMzPC5zCUGgn70LO6nrA5LW/Dx5PE8P9uuuG5tuXtevQ/v2sabiaFkNPhEC0v94b6Hhj3ICewTzSvKX9pbyVfCwu8V3a8DQ==
+[DEBUG 2020-10-24 23:10:05]wristband_cookies: o7KowrTuWK2albUX
+[DEBUG 2020-10-24 23:10:05]初始化测试数据
+[DEBUG 2020-10-24 23:10:21]respones没有字段
+[DEBUG 2020-10-25 23:10:04]platfolm_cookies: lvtx.1WxxA9ANpM6E8PqJ2wM3do/hu+xehfhVIR7vgL+QjTk8Iznr10ScTn5OThB5tRD7zVEMoli0xHqxogtNgGhgk6UD0DYfAycdKrIB9UseUPv1Rge/kqKL8qyCMcw31I7wfAMn7q49RxxDoeDiHSbkUtp5xUU5IUvt8OUDOam4YzMZAOgu4dNwZ94bHoOyDz5o3Ck0PA==
+[DEBUG 2020-10-25 23:10:05]wristband_cookies: giMead/OX32Cnb4l
+[DEBUG 2020-10-25 23:10:05]初始化测试数据
+[DEBUG 2020-10-25 23:10:16]respones没有字段
+[DEBUG 2020-10-26 14:44:00]初始化测试数据
+[DEBUG 2020-10-26 14:46:02]初始化测试数据
+[DEBUG 2020-10-26 15:32:41]初始化测试数据
+[DEBUG 2020-10-26 15:34:11]初始化测试数据
+[DEBUG 2020-10-26 15:36:51]初始化测试数据
+[DEBUG 2020-10-26 15:37:50]初始化测试数据
+[DEBUG 2020-10-26 15:39:40]初始化测试数据
+[DEBUG 2020-10-26 15:42:41]初始化测试数据
+[DEBUG 2020-10-26 15:46:11]初始化测试数据
+[DEBUG 2020-10-26 15:49:26]初始化测试数据
+[DEBUG 2020-10-26 15:49:38]初始化测试数据
+[DEBUG 2020-10-26 15:52:24]初始化测试数据
+[DEBUG 2020-10-26 15:54:49]初始化测试数据
+[DEBUG 2020-10-26 15:59:07]初始化测试数据
+[DEBUG 2020-10-26 16:01:00]初始化测试数据
+[DEBUG 2020-10-26 16:03:04]初始化测试数据
+[DEBUG 2020-10-26 17:26:32]初始化测试数据
+[DEBUG 2020-10-26 17:27:50]初始化测试数据
+[DEBUG 2020-10-26 17:29:44]初始化测试数据
+[DEBUG 2020-10-26 17:40:53]初始化测试数据
+[DEBUG 2020-10-26 17:42:01]初始化测试数据
+[DEBUG 2020-10-26 17:44:53]初始化测试数据
+[DEBUG 2020-10-26 17:50:17]初始化测试数据
+[ERROR 2020-10-26 17:51:04]xpath 未能找到 //*[@text='2C:AA:8E:8F:00:9E'] 元素
+[DEBUG 2020-10-26 17:51:40]初始化测试数据
+[DEBUG 2020-10-26 17:53:12]初始化测试数据
+[DEBUG 2020-10-26 17:56:09]初始化测试数据
+[DEBUG 2020-10-26 17:59:23]初始化测试数据
+[DEBUG 2020-10-26 19:38:52]初始化测试数据
+[DEBUG 2020-10-26 20:01:26]初始化测试数据
+[DEBUG 2020-10-26 20:08:28]初始化测试数据

@@ -193,3 +193,28 @@
 [ERROR 2020-10-12 16:39:24]App页面Response验证失败[2, 3, 5, 6, 7, 8, 11, 12, 13, 14, 15]
 [ERROR 2020-10-12 16:54:52]App页面Response验证失败[2, 3, 5, 6, 7, 8, 11, 12, 13, 14, 15]
 [ERROR 2020-10-12 17:13:58]App页面Response验证失败[2, 3, 5, 6, 7, 8, 11, 12, 13, 14, 15]
+[ERROR 2020-10-14 10:48:08]xpath 未能找到 //*[@resource-id="com.hualai:id/lottie_animation"] 元素
+[ERROR 2020-10-14 10:48:46]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[ERROR 2020-10-14 10:51:16]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-10-14 10:51:57]xpath 未能找到 //*[@resource-id="com.hualai:id/lottie_animation"] 元素
+[ERROR 2020-10-14 10:52:35]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[ERROR 2020-10-14 14:13:54]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-10-14 14:14:10]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[ERROR 2020-10-14 14:17:50]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-10-14 14:18:29]xpath 未能找到 //*[@resource-id="com.hualai:id/lottie_animation"] 元素
+[ERROR 2020-10-14 14:19:07]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[ERROR 2020-10-14 14:21:54]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-10-14 14:22:37]xpath 未能找到 //*[@resource-id="com.hualai:id/lottie_animation"] 元素
+[ERROR 2020-10-14 14:23:14]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[ERROR 2020-10-14 14:31:09]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-10-14 14:31:25]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[ERROR 2020-10-14 14:37:28]xpath 未能找到 //android.widget.TextView[@text="Login"] 元素
+[ERROR 2020-10-14 14:39:19]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-10-14 14:39:34]xpath 未能找到 //*[@resource-id="com.hualai:id/btn_okey"] 元素
+[ERROR 2020-10-14 14:42:19]xpath 未能找到 com.hualai:id/tv_home_screen_connect_fail_info 元素
+[ERROR 2020-10-14 14:42:52]xpath 未能找到 //*[@resource-id="com.hualai:id/lottie_animation"] 元素
+[ERROR 2020-10-14 14:43:28]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[ERROR 2020-10-14 14:58:52]xpath 未能找到 //android.widget.TextView[@text="Login"] 元素
+[ERROR 2020-10-14 15:00:29]xpath 未能找到 //*[@resource-id="com.hualai:id/lottie_animation"] 元素
+[ERROR 2020-10-14 15:01:07]xpath 未能找到 //android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"] 元素
+[ERROR 2020-10-26 17:51:04]xpath 未能找到 //*[@text='2C:AA:8E:8F:00:9E'] 元素

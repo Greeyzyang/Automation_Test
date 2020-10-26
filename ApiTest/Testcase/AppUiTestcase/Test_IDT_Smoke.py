@@ -8,8 +8,8 @@
 
 '''
 测试步骤：
-1：登录IDT
-2：绑定手环2C:AA:8E:00:AB:95
+1：打开IDT
+2：绑定手环
 3：点击设备信息
 4：点击设备电量
 5：点击活动数据
@@ -61,6 +61,7 @@ class TestClass:
         self.log = MyLog()
         desired_caps = Yamlc(yaml_path).get_yaml_data(1, "Model", "desired_caps")
         desired_caps2 = Yamlc(yaml_path).get_yaml_data(2, "Model", "desired_caps")
+        self.wyzeband_mac = "2C:AA:8E:00:AB:95"
         self.desired_caps = desired_caps
         self.app = App(desired_caps)
         self.app_setting = App(desired_caps2)
@@ -82,22 +83,22 @@ class TestClass:
             self.app_setting.restart_bluetooth()                                                                       #重启蓝牙
             self.driver = self.app.open_app()
             self.app.click_prompt_box()
-            if self.app.object_exist("2C:AA:8E:00:AB:95") == False:
+            if self.app.object_exist(self.wyzeband_mac) == False:
                 self.driver.keyevent(4)                                                                                #模拟返回键
                 self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="解绑"]').click()
-        self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="2C:AA:8E:00:AB:95"]').click()
+        self.app.find_elementby(By.XPATH, "//*[@class='android.widget.TextView' and @text='" + self.wyzeband_mac +"']").click()
         time.sleep(5)
         if self.app.object_exist("绑定失败"):
             self.driver.keyevent(4)
             self.driver.keyevent(4)
             time.sleep(10)
-            self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="2C:AA:8E:00:AB:95  已连接"]')
+            self.app.find_elementby(By.XPATH, "//*[@class='android.widget.TextView' and @text='" + self.wyzeband_mac  + "已连接  ']")
         # self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="请在设备上点击确认"]')
         # self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="绑定成功"]')
         # self.app.find_elementby(By.XPATH, '//*[@class="android.widget.Button" and @text="完成"]').click()
         self.app.click_prompt_box()
         self.app.click_prompt_box()
-        self.app.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="2C:AA:8E:00:AB:95  已连接"]')
+        self.app.find_elementby(By.XPATH, "//*[@class='android.widget.TextView' and @text='" + self.wyzeband_mac  + "已连接  ']")
         self.app.tv_device_info()                                                                                      #设备信息
         self.app.tv_device_property()                                                                                  #设备电量
         self.app.tv_device_activity()                                                                                  #活动数据

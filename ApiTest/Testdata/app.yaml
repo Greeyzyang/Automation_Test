@@ -4,12 +4,13 @@ Model:
     desired_caps:
       platformName: Android                                                # 使用哪个移动操作系统平台
       deviceName: HDP9K19128907088                                         #通过USB控制设备
-      #deviceName: 192.168.1.173:5555                                       #通过WiFi控制设备
+#      deviceName: 10.10.10.178:5555                                       #通过WiFi控制设备
       platformVersion: 8.1.0                                              # 移动操作系统版本
       noReset: False                                                      # 是否重新安装app
 #      app: C:\Users\EDZ\PycharmProjects\untitled\ApiTest\Testdata\app-debug.apk                 # app安装路径
       unicodeKeyboard: True                                              # 启用Unicode输入
       resetKeyboard: True                                                # 使用unicodeKeyboard功能运行Unicode测试后，将键盘重置为原始状态。
+      noReset: True
       fullReset: False                                                   # 保存cookies
       appPackage: com.ryeex.sdk.demo                                      # 运行的Android应用程序的Java包
       appActivity: com.ryeex.sdkband.MainActivity                         # 要从包中启动的Android活动的活动名称

@@ -3,9 +3,11 @@ Model:
   - IDT:                                                              # 应用程序
     desired_caps:
       platformName: Android                                                # 使用哪个移动操作系统平台
-      deviceName: HDP9K19128907088                                         #通过USB控制设备
+#      deviceName: HDP9K19128907088                                         #通过USB控制设备
+      deviceName: NRORX46H7555WWYT
 #      deviceName: 10.10.10.178:5555                                       #通过WiFi控制设备
-      platformVersion: 8.1.0                                              # 移动操作系统版本
+#      platformVersion: 8.1.0                                              # 移动操作系统版本
+      platformVersion: 10
       noReset: False                                                      # 是否重新安装app
 #      app: C:\Users\EDZ\PycharmProjects\untitled\ApiTest\Testdata\app-debug.apk                 # app安装路径
       unicodeKeyboard: True                                              # 启用Unicode输入

@@ -41,33 +41,40 @@ class TestClass:
     def test_wyzewatch_smoke(self):
         self.driver = self.app.open_app()
         self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='SATURN_设备']").click()
-        time.sleep(3)
+        time.sleep(5)
         if self.app.object_exist(self.wyzeband_mac + "  已连接") == False:
             self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='解绑']").click()
             self.app.click_prompt_box()
-        if self.app.object_exist_xpath("//android.view.ViewGroup[@index='0']") == False:
-            self.app.close_app()
-            self.app_setting.restart_bluetooth()                                                                       #重启蓝牙
-            self.driver = self.app.open_app()
-            self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='SATURN_设备']").click()
-            self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='扫描']").click()
-        time.sleep(5)
-        self.app.find_elementby(By.XPATH, "//*[@text='" + self.wyzeband_mac + "']").click()
-        time.sleep(5)
-        if self.app.object_exist("请在设备上点击确认"):
-            self.driver.keyevent(4)
-            self.driver.keyevent(4)
+            if (self.app.object_exist("realme Watch Saturn") or self.app.object_exist("WYZE") or self.app.object_exist("hey+")) == False:
+                self.app.close_app()
+                self.app_setting.restart_bluetooth()                                                                       #重启蓝牙
+                self.driver = self.app.open_app()
+                self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='SATURN_设备']").click()
+                self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='扫描']").click()
+            time.sleep(3)
+            self.app.find_elementby(By.XPATH, "//*[@text='" + self.wyzeband_mac + "']").click()
+            time.sleep(5)
+            if self.app.object_exist("请在设备上点击确认"):
+                self.driver.keyevent(4)
+                self.driver.keyevent(4)
             # self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='完成']").click()
-        # self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='SATURN_设备']").click()
-        self.app.saturn_inputclick("160", "280", "160", "280")
-        self.driver.keyevent(4)
-        self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='SATURN_设备']").click()
-        # self.app.find_elementby(By.XPATH, "//@text='" + self.wyzeband_mac + " 已连接']")
-        self.app.device_upslide()
-        self.app.device_downslide()
-        self.app.device_leftslide()
-        self.app.device_rightslide()
-        self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='解绑']").click()
+            # self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='SATURN_设备']").click()
+            self.app.saturn_inputclick("160", "240", "160", "240")
+            self.driver.keyevent(4)
+            self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='SATURN_设备']").click()
+            # self.app.find_elementby(By.XPATH, "//@text='" + self.wyzeband_mac + " 已连接']")
+        for i in range(1, 50):
+            self.app.device_upslide()
+            self.app.device_downslide()
+            self.app.device_leftslide()
+            self.app.device_leftslide()
+            self.app.device_leftslide()
+            self.app.device_rightslide()
+            self.app.device_rightslide()
+            self.app.device_rightslide()
+            self.app.device_rightslide()
+            self.app.device_leftslide()
+        # self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='解绑']").click()
         self.app.close_app()                                                                                           #关闭App
 
 

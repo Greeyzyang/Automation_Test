@@ -27,12 +27,14 @@ class TestClass:
         desired_caps = Yamlc(yaml_path).get_yaml_data(1, "Model", "desired_caps")
         desired_caps2 = Yamlc(yaml_path).get_yaml_data(2, "Model", "desired_caps")
         self.wyzeband_mac = "9C:F6:DD:38:15:E7"
+        # self.wyzeband_mac = "9C:F6:DD:38:15:6B"
         self.desired_caps = desired_caps
         self.app = App(desired_caps)
         self.app_setting = App(desired_caps2)
         self.log.debug(u'初始化测试数据')
 
     def teardown(self):
+        self.app.close_app()                                                                                           #关闭App
         print("Test End")
 
     @allure.story("模拟Saturn设备端操作验证")
@@ -61,7 +63,7 @@ class TestClass:
             self.driver.keyevent(4)
             self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='SATURN_设备']").click()
             # self.app.find_elementby(By.XPATH, "//@text='" + self.wyzeband_mac + " 已连接']")
-        for i in range(1, 50):
+        for i in range(1, 5):
             self.app.device_upslide()
             self.app.device_downslide()
             self.app.device_leftslide()
@@ -72,8 +74,8 @@ class TestClass:
             self.app.device_rightslide()
             self.app.device_rightslide()
             self.app.device_leftslide()
-        # self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='解绑']").click()
-        self.app.close_app()                                                                                           #关闭App
+        self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='解绑']").click()
+
 
 
 if __name__ == '__main__':

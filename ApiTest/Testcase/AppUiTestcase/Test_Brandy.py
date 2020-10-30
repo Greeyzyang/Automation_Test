@@ -25,13 +25,15 @@ class TestClass:
         self.log = MyLog()
         desired_caps = Yamlc(yaml_path).get_yaml_data(1, "Model", "desired_caps")
         desired_caps2 = Yamlc(yaml_path).get_yaml_data(2, "Model", "desired_caps")
-        self.wyzeband_mac = "2C:AA:8E:8F:00:9E"
+        # self.wyzeband_mac = "2C:AA:8E:8F:00:9E"
+        self.wyzeband_mac = "2c:aa:8e:8f:02:28"
         self.desired_caps = desired_caps
         self.app = App(desired_caps)
         self.app_setting = App(desired_caps2)
         self.log.debug(u'初始化测试数据')
 
     def teardown(self):
+        self.app.close_app()                                                                                           #关闭App
         print("Test End")
 
     @allure.story("模拟Brandy设备端操作验证")
@@ -71,7 +73,6 @@ class TestClass:
         self.app.device_leftslide()
         self.app.device_rightslide()
         # self.app.find_elementby(By.XPATH, "//android.widget.Button[@text='解绑']").click()
-        self.app.close_app()                                                                                           #关闭App
 
 
 if __name__ == '__main__':

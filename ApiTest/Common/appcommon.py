@@ -12,6 +12,8 @@ from selenium.webdriver.common.by import By
 import time
 import allure
 from appium.webdriver.common.touch_action import TouchAction
+import random
+import json
 
 
 class App(object):
@@ -127,6 +129,19 @@ class App(object):
             return flag
 
 
+    def getid(self):
+        L = []
+        M = []
+        for i in range(5):
+             L.append(random.randint(0, 9))
+             if len(L) >= 5:
+                     break
+        for d in L:
+            M.append(str(d))
+        S = ''.join(M)
+        return S
+
+
     # def bind_devices(self):
     #     if self.object_exist("2C:AA:8E:00:AB:95") == False:
     #         self.driver.close_app()
@@ -162,6 +177,32 @@ class App(object):
         self.close_setting()
 
 ###-------------------------------------------------------------------业务脚本----------------------------------------------------------------------###
+    def saturn_inputclick(self, sx, sy, ex, ey):
+        self.input_data('{"method":"tp_move","sx":"' + sx + '","sy":"' + sy + '","ex":"' + ex + '","ey":"' + ey + '","duration":"50","interval":"50"}')
+        self.find_elementby(By.XPATH, "//android.widget.Button[@text='坐标点击/滑动']").click()
+        self.clear_text()
+
+
+    def brandy_inputclick(self, x, y):
+        self.input_data('{"id": ' + self.getid() + ', "method": "touch", "gesture": "click", "pos": {"x": "' + x + '", "y": "'+ y + '"}}')
+        self.find_elementby(By.XPATH, "//android.widget.Button[@text='坐标点击/滑动']").click()
+        self.clear_text()
+
+    def device_upslide(self):
+        self.find_elementby(By.XPATH, "//android.widget.Button[@text='上滑']").click()
+        time.sleep(1)
+
+    def device_downslide(self):
+        self.find_elementby(By.XPATH, "//android.widget.Button[@text='下滑']").click()
+        time.sleep(1)
+
+    def device_leftslide(self):
+        self.find_elementby(By.XPATH, "//android.widget.Button[@text='左滑']").click()
+        time.sleep(1)
+
+    def device_rightslide(self):
+        self.find_elementby(By.XPATH, "//android.widget.Button[@text='右滑']").click()
+        time.sleep(1)
 
     @allure.step("登录wyze")
     def login_wyze(self, email_address, password):
@@ -176,14 +217,13 @@ class App(object):
     @allure.step("wyze升级")
     def upgrade_wyze(self, version):
         self.find_elementby(By.XPATH, '//*[@resource-id="com.hualai:id/wyze_main_item_nickname"]').click()
-        time.sleep(5)
-        if self.object_exist("Connecting..."):
+        time.sleep(3)
+        if self.object_exist("Enable Background Service") == False:
             while self.find_elementby(By.XPATH, 'com.hualai:id/tv_home_screen_connect_fail_info'):
                 self.find_elementby(By.XPATH, 'com.hualai:id/tv_home_screen_connect_fail_info').click()
                 time.sleep(5)
-        self.object_exist("Enable Background Service")
-        self.find_elementby(By.XPATH, '//*[@resource-id="com.hualai:id/btn_okey"]').click()
-        self.click_prompt_box()
+        # self.find_elementby(By.XPATH, '//*[@resource-id="com.hualai:id/btn_okey"]').click()
+        # self.click_prompt_box()
         self.find_elementby(By.XPATH, '//android.widget.ImageView[@resource-id="com.hualai:id/iv_home_screen_title_setting"]').click()
         if self.object_exist("Please keep the device close to the band while updating") == True:
            self.driver.keyevent(4)
@@ -232,7 +272,7 @@ class App(object):
         self.find_elementby(By.XPATH, '//*[@text="数据输入"]').send_keys(value)
 
 
-    def clear_text(self, value):
+    def clear_text(self):
         self.driver.press_keycode(29, 28672)                                                                            #键盘模拟选中所有删除
         self.driver.press_keycode(112)                                                                                  #键盘模拟选中所有删除
         # context = adr.get_attribute('text')
@@ -271,18 +311,20 @@ class App(object):
         self.assert_notin_text()
 
     @allure.step("重启手环")
-    def tv_reboot_device(self):
+    def tv_reboot_device(self, text):
         self.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="重启手环"]').click()
-        time.sleep(15)
-        self.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="2C:AA:8E:00:AB:95  已连接"]')
         self.assert_notin_text()
+        self.find_elementby(By.XPATH, '//*[@class="android.widget.Button" and @text="' + text + '"]').click()
+        time.sleep(10)
+
 
     @allure.step("发送通知")
     def tv_send_notification(self, value):
+        value = json.dumps(value)
         self.input_data(value)
         self.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="发送通知"]').click()
         self.assert_notin_text()
-        self.clear_text(value)
+        self.clear_text()
 
     @allure.step("获取应用排序")
     def tv_app_list(self, keyword):
@@ -294,7 +336,7 @@ class App(object):
         self.input_data(value)
         self.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="设置应用排序"]').click()
         self.assert_notin_text()
-        self.clear_text(value)
+        self.clear_text()
 
     @allure.step("获取勿扰模式")
     def tv_getDoNotDisturb(self, keyword):
@@ -306,7 +348,7 @@ class App(object):
         self.input_data(value)
         self.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="设置勿扰模式"]').click()
         self.assert_notin_text()
-        self.clear_text(value)
+        self.clear_text()
 
     @allure.step("获取抬腕亮屏")
     def tv_getDeviceRaiseToWake(self, keyword):
@@ -318,7 +360,7 @@ class App(object):
         self.input_data(value)
         self.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="设置抬腕亮屏"]').click()
         self.assert_notin_text()
-        self.clear_text(value)
+        self.clear_text()
 
     @allure.step("获取心率检测")
     def tv_getHeartRateDetect(self, keyword):
@@ -330,7 +372,7 @@ class App(object):
         self.input_data(value)
         self.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="设置心率检测"]').click()
         self.assert_notin_text()
-        self.clear_text(value)
+        self.clear_text()
 
     @allure.step("获取屏幕亮度")
     def tv_getDeviceBrightness(self, keyword):
@@ -342,7 +384,7 @@ class App(object):
         self.input_data(value)
         self.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="设置屏幕亮度"]').click()
         self.assert_notin_text()
-        self.clear_text(value)
+        self.clear_text()
 
     @allure.step("获取震动开关")
     def tv_getHomeVibrateSetting(self, keyword):
@@ -354,14 +396,14 @@ class App(object):
         self.input_data(value)
         self.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="设置震动开关"]').click()
         self.assert_notin_text()
-        self.clear_text(value)
+        self.clear_text()
 
     @allure.step("设置解锁方式")
     def tv_setUnlock(self, value):
         self.input_data(value)
         self.find_elementby(By.XPATH, '//*[@class="android.widget.TextView" and @text="设置解锁方式"]').click()
         self.assert_notin_text()
-        self.clear_text(value)
+        self.clear_text()
 
     @allure.step("获取解锁方式")
     def tv_getUnlock(self, keyword):

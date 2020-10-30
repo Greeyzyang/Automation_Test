@@ -68,6 +68,7 @@ class TestClass:
         self.log.debug(u'初始化测试数据')
 
     def teardown(self):
+        self.app.close_app()                                                                                           #关闭App
         print("Test End")
 
     @allure.story("设备端通过性验证")
@@ -148,8 +149,8 @@ class TestClass:
         self.app.tv_getUnlock(0)
 
         self.app.swpe(size['width']*0.25, size['height']*0.25, size['width']*0.25, size['height']*0.95)
-        self.app.tv_unbind()                                                                                           #解绑
-        self.app.close_app()                                                                                           #关闭App
+        # self.app.tv_unbind()                                                                                           #解绑
+
 
 
 if __name__ == '__main__':

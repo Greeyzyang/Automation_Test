@@ -223,3 +223,4 @@
 [ERROR 2020-10-29 20:56:44]xpath 未能找到 //*[@text='9C:F6:DD:38:15:E7'] 元素
 [ERROR 2020-10-30 10:50:37]xpath 未能找到 //*[@text='2C:AA:8E:8F:00:9E'] 元素
 [ERROR 2020-10-30 11:33:55]xpath 未能找到 //*[@class="android.widget.TextView" and @text="BRANDY_APP"] 元素
+[ERROR 2020-10-30 14:23:26]xpath 未能找到 //*[@text='2c:aa:8e:8f:02:28'] 元素

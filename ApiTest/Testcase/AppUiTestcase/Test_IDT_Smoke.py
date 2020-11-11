@@ -61,7 +61,7 @@ class TestClass:
         self.log = MyLog()
         desired_caps = Yamlc(yaml_path).get_yaml_data(1, "Model", "desired_caps")
         desired_caps2 = Yamlc(yaml_path).get_yaml_data(2, "Model", "desired_caps")
-        self.wyzeband_mac = "2C:AA:8E:8F:00:9E"
+        self.wyzeband_mac = "9C:F6:DD:38:19:59"
         self.desired_caps = desired_caps
         self.app = App(desired_caps)
         self.app_setting = App(desired_caps2)

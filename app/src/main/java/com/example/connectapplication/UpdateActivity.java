@@ -51,6 +51,7 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -106,6 +107,7 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
     private boolean isBind;
     private String currentday;
     private String wrong_logs;
+    private String timetime1;
     private long update_on_time;
     private boolean isDownGrade;
     private List<Long> timeupdateList = new ArrayList<>();
@@ -178,7 +180,13 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
                     break;
                 case MSG_GET_UPDATE_LOGIN:
                     Log.d("yj","MSG_GET_UPDATE_LOGIN22222222222");
-                    ScanBlueTooth.startLogin(watchDevice);
+                    if (!watchDevice.isLogin()) {
+                        Log.d("yj","MSG_GET_UPDATE_LOGIN--------1");
+                        ScanBlueTooth.startLogin(watchDevice);
+                    }else {
+                        Log.d("yj","MSG_GET_UPDATE_LOGIN--------2");
+                        EventBus.getDefault().post(new BindEvent(CommonValue.LOGIN_SUCCESS, null));
+                    }
                     break;
             }
         }
@@ -416,7 +424,9 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
             isBind = true;
         } else if (event.message.equals(CommonValue.BIND_ERROR)) {
             Log.d("yj","onevent2--------");
-            wrong_logs = wrong_logs + "\n" + event.errorinfo;
+            timetime1 = new java.text.SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+//            timetime1 = System.currentTimeMillis();
+            wrong_logs = timetime1 + wrong_logs + "\n" + event.errorinfo;
             test_bind_unbind_result.setText("绑定设备失败");
             //ConnectionDialog.showNormalDialog(NotificationAutoTestActivity.this);
             watchDevice.setToken(CommonShared.ReadToken(UpdateActivity.this,phone_select_device.getText().toString().trim()));
@@ -429,7 +439,8 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
             isBind = false;
         } else if (event.message.equals(CommonValue.UNBIND_ERROR)) {
             Log.d("yj","onevent4--------");
-            wrong_logs = wrong_logs + "\n" + event.errorinfo;
+            timetime1 = new java.text.SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+            wrong_logs = timetime1 + wrong_logs + "\n" + event.errorinfo;
             test_bind_unbind_result.setText("解绑设备失败");
         }
 
@@ -446,7 +457,7 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
                 timeupdateList.add(update_on_time);
                 test_update_progress_selected.setText("升级成功");
                 isDownGrade = true;
-                uHandler.sendEmptyMessageDelayed(MSG_GET_UPDATE_LOGIN,30*1000);
+                uHandler.sendEmptyMessageDelayed(MSG_GET_UPDATE_LOGIN,150*1000);
             } else {
                 Log.d("yj","onevent7--------");
                 CommonValue.DOWNGRADE_SUCCESS_COUNT++;
@@ -458,7 +469,7 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
                     if(playspace>10)
                         time = playspace*1000;
                     else
-                        time = 30*1000;
+                        time = 150*1000;
                     uHandler.sendEmptyMessageDelayed(MSG_GET_UPDATE_LOGIN, time);
                 }
             }
@@ -467,14 +478,15 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
 
         if (event.message.equals(CommonValue.UPDATE_FAIL)) {
             Log.d("yj","onevent8--------");
-            wrong_logs = wrong_logs + "\n" + event.errorinfo;
+            timetime1 = new java.text.SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+            wrong_logs = timetime1 + wrong_logs + "\n" + event.errorinfo;
             if (!isDownGrade) {
                 CommonValue.UPDATE_FAIL_COUNT++;
             } else {
                 CommonValue.DOWNGRADE_FAIL_COUNT++;
             }
             test_update_progress_selected.setText("升级失败");
-            uHandler.sendEmptyMessageDelayed(MSG_GET_UPDATE_LOGIN,30*1000);
+            uHandler.sendEmptyMessageDelayed(MSG_GET_UPDATE_LOGIN,10*1000);
 //            uHandler.sendEmptyMessage(MSG_GET_UPDATE_LOGIN);
 
         }
@@ -492,7 +504,7 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
                 }
             }
         }else if(event.message.equals(CommonValue.LOGIN_ERROR)){
-            uHandler.sendEmptyMessageDelayed(MSG_GET_UPDATE_LOGIN, 5000);
+            uHandler.sendEmptyMessageDelayed(MSG_GET_UPDATE_LOGIN, 10*1000);
         }
     }
 

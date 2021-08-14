@@ -46,6 +46,7 @@ import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -143,6 +144,8 @@ public class BlueToothConnectActivity extends AppCompatActivity implements View.
     private String currentday;
 
     private String wrong_log = "";
+
+    private String timetime1;
 
     private boolean isDeviceBind;
 
@@ -569,7 +572,8 @@ public class BlueToothConnectActivity extends AppCompatActivity implements View.
         } else if (event.message.equals(CommonValue.BIND_ERROR)) {
             Log.d("yj","onevent2--------");
             Log.d("yj","bind---error----");
-            wrong_log = wrong_log + "\n" + event.errorinfo;
+            timetime1 = new java.text.SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+            wrong_log = timetime1+ wrong_log + "\n" + event.errorinfo;
             String error = JosnParse.parseString(event.errorinfo);
             String bleCode = error.split("\\|")[0];
             String message = error.split("\\|")[1];
@@ -669,7 +673,8 @@ public class BlueToothConnectActivity extends AppCompatActivity implements View.
             CommonShared.WriteToken(BlueToothConnectActivity.this, phone_select_device.getText().toString().trim(), "");
         } else if (event.message.equals(CommonValue.UNBIND_ERROR)) {
             Log.d("yj","onevent4--------");
-            wrong_log = wrong_log + "\n" + event.errorinfo;
+            timetime1 = new java.text.SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+            wrong_log = timetime1+ wrong_log + "\n" + event.errorinfo;
             if (!isComputeScanConnected) {
                 Log.d("yj","onevent4-1-------");
                 if (watchDevice.isLogin()) {
@@ -770,7 +775,8 @@ public class BlueToothConnectActivity extends AppCompatActivity implements View.
             }
         } else if (event.message.equals(CommonValue.LOGIN_ERROR)) {
             Log.d("yj","onevent6--------");
-            wrong_log = wrong_log + "\n" + event.errorinfo;
+            timetime1 = new java.text.SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+            wrong_log = timetime1+ wrong_log + "\n" + event.errorinfo;
             String error = JosnParse.parseString(event.errorinfo);
             String bleCode = error.split("\\|")[0];
             String message = error.split("\\|")[1];
@@ -820,7 +826,8 @@ public class BlueToothConnectActivity extends AppCompatActivity implements View.
             }
         } else if (event.message.equals(CommonValue.LOGOUT_ERROR)) {
             Log.d("yj","onevent8--------");
-            wrong_log = wrong_log + "\n" + event.errorinfo;
+            timetime1 = new java.text.SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+            wrong_log = timetime1+ wrong_log + "\n" + event.errorinfo;
             if(watchDevice.isLogin())
                 ScanBlueTooth.endlogout(watchDevice);
             else{

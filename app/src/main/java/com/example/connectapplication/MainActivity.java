@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private TextView update_title;
 
+
     private TextView long_bluetooth;
 
     private String fileDir = WriteLogToFile.logPath + File.separator + "watchupdate/";
@@ -48,10 +49,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         BleHandler.getWorkerHandler().post(new Runnable() {
             @Override
             public void run() {
-                copyAssets("85-10.bin");
-                copyAssets("0.3.10.bin");
-                copyAssets("0.2.85.bin");
-                copyAssets("10-85.bin");
+                copyAssets("1.3.0.386.bin");
+                copyAssets("1.3.0.425.bin");
+                copyAssets("386-425.bin");
+                copyAssets("425-386.bin");
             }
         });
     }
@@ -119,8 +120,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void copyAssets(String fileName) {
         try {
             File files = new File(fileDir);
+            Log.d("yj","copyAssets1-------" +  files);
+            Log.d("yj","copyAssets1-------" +  files.exists());
             if (!files.exists()) {
                 files.mkdirs();
+                Log.d("yj","copyAssets2-------" +  files);
             }
             File file = new File(files, fileName);
             InputStream is = null;

@@ -526,7 +526,7 @@ public class ScanBlueTooth {
         items.add(updateItem1);
 
         firmwareUpdateInfo.setUrlList(items);
-        firmwareUpdateInfo.setResFull(false);
+        firmwareUpdateInfo.setResFull(true);
 
         Log.i("yj", "updateFirmware firmwareUpdateInfo:" + GSON.toJSONString(firmwareUpdateInfo));
 

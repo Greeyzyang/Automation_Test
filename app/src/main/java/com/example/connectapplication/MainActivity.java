@@ -49,10 +49,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         BleHandler.getWorkerHandler().post(new Runnable() {
             @Override
             public void run() {
-                copyAssets("1.3.0.386.bin");
-                copyAssets("1.3.0.425.bin");
-                copyAssets("386-425.bin");
-                copyAssets("425-386.bin");
+                copyAssets("0.1.31.10919.bin");
+                copyAssets("0.1.32.0.bin");
+                copyAssets("32.bin");
+                copyAssets("10919.bin");
+                copyAssets("32-10919.bin");
+                copyAssets("10919-32.bin");
             }
         });
     }
